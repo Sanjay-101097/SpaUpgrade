@@ -1,0 +1,99 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769",
+  "files": [
+    "__original-animation-0.cconb"
+  ],
+  "subMetas": {
+    "c8cb6": {
+      "importer": "gltf-animation",
+      "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769@c8cb6",
+      "displayName": "",
+      "id": "c8cb6",
+      "name": "customer_haircut_wait.animation",
+      "userData": {
+        "gltfIndex": 0,
+        "wrapMode": 2,
+        "sample": 30,
+        "span": {
+          "from": 0,
+          "to": 3.5999999046325684
+        },
+        "events": []
+      },
+      "ver": "1.0.17",
+      "imported": true,
+      "files": [
+        ".cconb"
+      ],
+      "subMetas": {}
+    },
+    "38c20": {
+      "importer": "gltf-scene",
+      "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769@38c20",
+      "displayName": "",
+      "id": "38c20",
+      "name": "customer_haircut_wait.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "animationImportSettings": [
+      {
+        "name": "customer_haircut_wait",
+        "duration": 3.5999999046325684,
+        "fps": 30,
+        "splits": [
+          {
+            "name": "customer_haircut_wait",
+            "from": 0,
+            "to": 3.5999999046325684,
+            "wrapMode": 2,
+            "previousId": "c8cb6"
+          }
+        ]
+      }
+    ],
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [],
+      "skeletons": [],
+      "textures": [],
+      "materials": [],
+      "scenes": [
+        "a03b7c9e-f46e-4cb6-847d-b19119b99769@38c20"
+      ]
+    }
+  }
+}
