@@ -7,12 +7,12 @@
     "__original-animation-0.cconb"
   ],
   "subMetas": {
-    "81b02": {
+    "73b7f": {
       "importer": "gltf-animation",
-      "uuid": "81b142b0-129d-4f19-848c-d93932a3a050@81b02",
+      "uuid": "81b142b0-129d-4f19-848c-d93932a3a050@73b7f",
       "displayName": "",
-      "id": "81b02",
-      "name": "customer_idle.animation",
+      "id": "73b7f",
+      "name": "Take 001.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -54,16 +54,16 @@
     },
     "animationImportSettings": [
       {
-        "name": "customer_idle",
+        "name": "Take 001",
         "duration": 6.599999904632568,
         "fps": 30,
         "splits": [
           {
-            "name": "customer_idle",
+            "name": "Take 001",
             "from": 0,
             "to": 6.599999904632568,
             "wrapMode": 2,
-            "previousId": "81b02"
+            "previousId": "73b7f"
           }
         ]
       }

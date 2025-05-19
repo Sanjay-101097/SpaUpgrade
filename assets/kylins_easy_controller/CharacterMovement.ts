@@ -151,7 +151,6 @@ export class CharacterMovement extends Component {
             cameraRotationY = this.mainCamera.node.eulerAngles.y;
         }
         this._velocityScale = offset;
-        //2D界面是 正X 为 0， 3D场景是 正前方为0，所以需要 - 90 度。（顺时针转90度）
         this._tmp.set(0, cameraRotationY + degree - 90 + 180, 0);
         this.node.setRotationFromEuler(this._tmp);
         if (this._anim) {

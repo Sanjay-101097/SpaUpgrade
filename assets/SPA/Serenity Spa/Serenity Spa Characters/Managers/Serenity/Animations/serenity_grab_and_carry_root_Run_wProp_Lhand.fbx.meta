@@ -2,14 +2,14 @@
   "ver": "2.3.13",
   "importer": "fbx",
   "imported": true,
-  "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769",
+  "uuid": "f0048755-3e4a-427b-8b2f-4a492e324691",
   "files": [
     "__original-animation-0.cconb"
   ],
   "subMetas": {
     "73b7f": {
       "importer": "gltf-animation",
-      "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769@73b7f",
+      "uuid": "f0048755-3e4a-427b-8b2f-4a492e324691@73b7f",
       "displayName": "",
       "id": "73b7f",
       "name": "Take 001.animation",
@@ -19,7 +19,7 @@
         "sample": 30,
         "span": {
           "from": 0,
-          "to": 3.5999999046325684
+          "to": 14.600000381469727
         },
         "events": []
       },
@@ -30,12 +30,12 @@
       ],
       "subMetas": {}
     },
-    "38c20": {
+    "bf02b": {
       "importer": "gltf-scene",
-      "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769@38c20",
+      "uuid": "f0048755-3e4a-427b-8b2f-4a492e324691@bf02b",
       "displayName": "",
-      "id": "38c20",
-      "name": "customer_haircut_wait.prefab",
+      "id": "bf02b",
+      "name": "serenity_grab_and_carry_root_Run_wProp_Lhand.prefab",
       "userData": {
         "gltfIndex": 0
       },
@@ -55,13 +55,13 @@
     "animationImportSettings": [
       {
         "name": "Take 001",
-        "duration": 3.5999999046325684,
+        "duration": 14.600000381469727,
         "fps": 30,
         "splits": [
           {
             "name": "Take 001",
             "from": 0,
-            "to": 3.5999999046325684,
+            "to": 14.600000381469727,
             "wrapMode": 2,
             "previousId": "73b7f"
           }
@@ -92,7 +92,7 @@
       "textures": [],
       "materials": [],
       "scenes": [
-        "a03b7c9e-f46e-4cb6-847d-b19119b99769@38c20"
+        "f0048755-3e4a-427b-8b2f-4a492e324691@bf02b"
       ]
     }
   }

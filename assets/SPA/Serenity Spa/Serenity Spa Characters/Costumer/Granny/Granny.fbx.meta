@@ -22,24 +22,6 @@
       ],
       "subMetas": {}
     },
-    "57248": {
-      "importer": "gltf-mesh",
-      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@57248",
-      "displayName": "",
-      "id": "57248",
-      "name": "basemesh_female.005.mesh",
-      "userData": {
-        "gltfIndex": 1,
-        "triangleCount": 3400
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
     "62756": {
       "importer": "gltf-skeleton",
       "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@62756",
@@ -57,12 +39,12 @@
       ],
       "subMetas": {}
     },
-    "41fce": {
+    "4b383": {
       "importer": "gltf-mesh",
-      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@41fce",
+      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@4b383",
       "displayName": "",
-      "id": "41fce",
-      "name": "Circle.006.mesh",
+      "id": "4b383",
+      "name": "Granny_Cane.mesh",
       "userData": {
         "gltfIndex": 0,
         "triangleCount": 322
@@ -75,15 +57,33 @@
       ],
       "subMetas": {}
     },
-    "f8ac4": {
+    "dea73": {
       "importer": "gltf-mesh",
-      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@f8ac4",
+      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@dea73",
       "displayName": "",
-      "id": "f8ac4",
-      "name": "basemesh_female.006.mesh",
+      "id": "dea73",
+      "name": "Granny_Clothing.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 2500
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "528e2": {
+      "importer": "gltf-mesh",
+      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@528e2",
+      "displayName": "",
+      "id": "528e2",
+      "name": "Granny_Head.mesh",
       "userData": {
         "gltfIndex": 2,
-        "triangleCount": 1940
+        "triangleCount": 1420
       },
       "ver": "1.1.1",
       "imported": true,
@@ -93,15 +93,15 @@
       ],
       "subMetas": {}
     },
-    "adbb4": {
+    "b805c": {
       "importer": "gltf-mesh",
-      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@adbb4",
+      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@b805c",
       "displayName": "",
-      "id": "adbb4",
-      "name": "basemesh_female.008.mesh",
+      "id": "b805c",
+      "name": "Granny_Hair.mesh",
       "userData": {
         "gltfIndex": 3,
-        "triangleCount": 1870
+        "triangleCount": 1344
       },
       "ver": "1.1.1",
       "imported": true,
@@ -111,15 +111,15 @@
       ],
       "subMetas": {}
     },
-    "9b8b1": {
+    "fe5b0": {
       "importer": "gltf-mesh",
-      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@9b8b1",
+      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@fe5b0",
       "displayName": "",
-      "id": "9b8b1",
-      "name": "basemesh_female.009.mesh",
+      "id": "fe5b0",
+      "name": "Granny_Body.mesh",
       "userData": {
         "gltfIndex": 4,
-        "triangleCount": 3788
+        "triangleCount": 2750
       },
       "ver": "1.1.1",
       "imported": true,
@@ -129,15 +129,15 @@
       ],
       "subMetas": {}
     },
-    "9c48b": {
+    "8e8cb": {
       "importer": "gltf-mesh",
-      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@9c48b",
+      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@8e8cb",
       "displayName": "",
-      "id": "9c48b",
-      "name": "basemesh_female.001.mesh",
+      "id": "8e8cb",
+      "name": "Granny_Glasses.mesh",
       "userData": {
         "gltfIndex": 5,
-        "triangleCount": 1192
+        "triangleCount": 888
       },
       "ver": "1.1.1",
       "imported": true,
@@ -215,6 +215,22 @@
       ],
       "subMetas": {}
     },
+    "d8b49": {
+      "importer": "gltf-material",
+      "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@d8b49",
+      "displayName": "",
+      "id": "d8b49",
+      "name": "standardSurface1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "e382c": {
       "importer": "gltf-scene",
       "uuid": "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@e382c",
@@ -257,12 +273,12 @@
     },
     "assetFinder": {
       "meshes": [
-        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@41fce",
-        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@57248",
-        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@f8ac4",
-        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@adbb4",
-        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@9b8b1",
-        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@9c48b"
+        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@4b383",
+        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@dea73",
+        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@528e2",
+        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@b805c",
+        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@fe5b0",
+        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@8e8cb"
       ],
       "skeletons": [
         "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@30732",
@@ -273,7 +289,9 @@
         "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@62756"
       ],
       "textures": [],
-      "materials": [],
+      "materials": [
+        "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@d8b49"
+      ],
       "scenes": [
         "903b1a3d-a7ef-4f40-85d2-f44c1d406c69@e382c"
       ]

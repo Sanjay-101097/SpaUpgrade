@@ -7,12 +7,12 @@
     "__original-animation-0.cconb"
   ],
   "subMetas": {
-    "47899": {
+    "73b7f": {
       "importer": "gltf-animation",
-      "uuid": "ad324020-aa34-4d1d-81bb-fb2d3520751a@47899",
+      "uuid": "ad324020-aa34-4d1d-81bb-fb2d3520751a@73b7f",
       "displayName": "",
-      "id": "47899",
-      "name": "customer_walk_DoubleSpeed.animation",
+      "id": "73b7f",
+      "name": "Take 001.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -54,16 +54,16 @@
     },
     "animationImportSettings": [
       {
-        "name": "customer_walk_DoubleSpeed",
+        "name": "Take 001",
         "duration": 0.5333333611488342,
         "fps": 30,
         "splits": [
           {
-            "name": "customer_walk_DoubleSpeed",
+            "name": "Take 001",
             "from": 0,
             "to": 0.5333333611488342,
             "wrapMode": 2,
-            "previousId": "47899"
+            "previousId": "73b7f"
           }
         ]
       }
