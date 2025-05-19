@@ -195,7 +195,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Head_Col.tga"
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Head_Col.tga"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -218,7 +218,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Hair_Col.tga"
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Hair_Col.tga"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -241,7 +241,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Body_Col.tga"
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Body_Col.tga"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -342,15 +342,15 @@
     "imageMetas": [
       {
         "name": "file1",
-        "uri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Head_Col.tga"
+        "uri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Head_Col.tga"
       },
       {
         "name": "file6",
-        "uri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Hair_Col.tga"
+        "uri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Hair_Col.tga"
       },
       {
         "name": "file4",
-        "uri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Body_Col.tga"
+        "uri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Body_Col.tga"
       },
       {
         "name": "file3",

@@ -5,26 +5,6 @@
   "uuid": "24901ff3-4d6e-457d-938c-558399ea5e0b",
   "files": [],
   "subMetas": {
-    "11088": {
-      "importer": "gltf-embeded-image",
-      "uuid": "24901ff3-4d6e-457d-938c-558399ea5e0b@11088",
-      "displayName": "",
-      "id": "11088",
-      "name": "DiffuseColor_Texture_4.image",
-      "userData": {
-        "gltfIndex": 7,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "12891": {
       "importer": "gltf-mesh",
       "uuid": "24901ff3-4d6e-457d-938c-558399ea5e0b@12891",
@@ -56,8 +36,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "24901ff3-4d6e-457d-938c-558399ea5e0b@b0ccd"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Station_Waiting Area_Medium_Table_BaseColor.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -198,26 +178,6 @@
       ],
       "subMetas": {}
     },
-    "b0ccd": {
-      "importer": "gltf-embeded-image",
-      "uuid": "24901ff3-4d6e-457d-938c-558399ea5e0b@b0ccd",
-      "displayName": "",
-      "id": "b0ccd",
-      "name": "DiffuseColor_Texture_2.image",
-      "userData": {
-        "gltfIndex": 3,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "b9fa2": {
       "importer": "gltf-embeded-image",
       "uuid": "24901ff3-4d6e-457d-938c-558399ea5e0b@b9fa2",
@@ -286,26 +246,6 @@
       "name": "NormalMap_Texture_4.image",
       "userData": {
         "gltfIndex": 8,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "fd73d": {
-      "importer": "gltf-embeded-image",
-      "uuid": "24901ff3-4d6e-457d-938c-558399ea5e0b@fd73d",
-      "displayName": "",
-      "id": "fd73d",
-      "name": "DiffuseColor_Texture.image",
-      "userData": {
-        "gltfIndex": 9,
         "fixAlphaTransparencyArtifacts": true,
         "hasAlpha": true,
         "type": "texture"
@@ -489,8 +429,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "24901ff3-4d6e-457d-938c-558399ea5e0b@11088"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Station_Waiting Area_Magazines_BaseColor.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -535,8 +475,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "24901ff3-4d6e-457d-938c-558399ea5e0b@fd73d"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Station_Waiting Area_Carpet_Small_BaseColor.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -745,7 +685,7 @@
       },
       {
         "name": "DiffuseColor_Texture_2",
-        "uri": "24901ff3-4d6e-457d-938c-558399ea5e0b@b0ccd"
+        "uri": "db://assets/SPA/Station_Waiting Area_Medium_Table_BaseColor.png"
       },
       {
         "name": "NormalMap_Texture_2",
@@ -761,7 +701,7 @@
       },
       {
         "name": "DiffuseColor_Texture_4",
-        "uri": "24901ff3-4d6e-457d-938c-558399ea5e0b@11088"
+        "uri": "db://assets/SPA/Station_Waiting Area_Magazines_BaseColor.png"
       },
       {
         "name": "NormalMap_Texture_4",
@@ -769,7 +709,7 @@
       },
       {
         "name": "DiffuseColor_Texture",
-        "uri": "24901ff3-4d6e-457d-938c-558399ea5e0b@fd73d"
+        "uri": "db://assets/SPA/Station_Waiting Area_Carpet_Small_BaseColor.png"
       },
       {
         "name": "NormalMap_Texture",

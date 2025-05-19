@@ -199,7 +199,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/CustomerB_Body_Col.png"
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/CustomerB_Body_Col.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -268,7 +268,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/customerB_head_col.tga"
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/customerB_head_col.tga"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -362,7 +362,7 @@
     "imageMetas": [
       {
         "name": "file2",
-        "uri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/CustomerB_Body_Col.png"
+        "uri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/CustomerB_Body_Col.png"
       },
       {
         "name": "file1",
@@ -374,7 +374,7 @@
       },
       {
         "name": "file4",
-        "uri": "db://assets/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/customerB_head_col.tga"
+        "uri": "db://assets/SPA/Serenity Spa/Serenity Spa Characters/Costumer/CustomerB/customerB_head_col.tga"
       }
     ],
     "fbx": {

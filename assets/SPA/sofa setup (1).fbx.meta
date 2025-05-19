@@ -78,26 +78,6 @@
       ],
       "subMetas": {}
     },
-    "a868b": {
-      "importer": "gltf-embeded-image",
-      "uuid": "78c5f463-0c3e-4b47-a466-6aa548615651@a868b",
-      "displayName": "",
-      "id": "a868b",
-      "name": "DiffuseColor_Texture_7.image",
-      "userData": {
-        "gltfIndex": 0,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "20f2d": {
       "importer": "gltf-embeded-image",
       "uuid": "78c5f463-0c3e-4b47-a466-6aa548615651@20f2d",
@@ -118,26 +98,6 @@
       ],
       "subMetas": {}
     },
-    "b5cf3": {
-      "importer": "gltf-embeded-image",
-      "uuid": "78c5f463-0c3e-4b47-a466-6aa548615651@b5cf3",
-      "displayName": "",
-      "id": "b5cf3",
-      "name": "DiffuseColor_Texture_9.image",
-      "userData": {
-        "gltfIndex": 2,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
     "64f2a": {
       "importer": "gltf-embeded-image",
       "uuid": "78c5f463-0c3e-4b47-a466-6aa548615651@64f2a",
@@ -146,26 +106,6 @@
       "name": "NormalMap_Texture_10.image",
       "userData": {
         "gltfIndex": 3,
-        "fixAlphaTransparencyArtifacts": true,
-        "hasAlpha": true,
-        "type": "texture"
-      },
-      "ver": "1.0.3",
-      "imported": true,
-      "files": [
-        ".json",
-        ".png"
-      ],
-      "subMetas": {}
-    },
-    "345ff": {
-      "importer": "gltf-embeded-image",
-      "uuid": "78c5f463-0c3e-4b47-a466-6aa548615651@345ff",
-      "displayName": "",
-      "id": "345ff",
-      "name": "DiffuseColor_Texture2.image",
-      "userData": {
-        "gltfIndex": 4,
         "fixAlphaTransparencyArtifacts": true,
         "hasAlpha": true,
         "type": "texture"
@@ -251,8 +191,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "78c5f463-0c3e-4b47-a466-6aa548615651@a868b"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Station_Waiting Area_Medium_Table_BaseColor.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -297,8 +237,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "78c5f463-0c3e-4b47-a466-6aa548615651@b5cf3"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Station_Waiting Area_Magazines_BaseColor.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -320,8 +260,8 @@
         "magfilter": "linear",
         "mipfilter": "none",
         "anisotropy": 0,
-        "isUuid": true,
-        "imageUuidOrDatabaseUri": "78c5f463-0c3e-4b47-a466-6aa548615651@345ff"
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Station_Waiting Area_Carpet_Small_BaseColor.png"
       },
       "ver": "1.0.22",
       "imported": true,
@@ -452,7 +392,7 @@
     "imageMetas": [
       {
         "name": "DiffuseColor_Texture_7",
-        "uri": "78c5f463-0c3e-4b47-a466-6aa548615651@a868b"
+        "uri": "db://assets/SPA/Station_Waiting Area_Medium_Table_BaseColor.png"
       },
       {
         "name": "NormalMap_Texture_8",
@@ -460,7 +400,7 @@
       },
       {
         "name": "DiffuseColor_Texture_9",
-        "uri": "78c5f463-0c3e-4b47-a466-6aa548615651@b5cf3"
+        "uri": "db://assets/SPA/Station_Waiting Area_Magazines_BaseColor.png"
       },
       {
         "name": "NormalMap_Texture_10",
@@ -468,7 +408,7 @@
       },
       {
         "name": "DiffuseColor_Texture2",
-        "uri": "78c5f463-0c3e-4b47-a466-6aa548615651@345ff"
+        "uri": "db://assets/SPA/Station_Waiting Area_Carpet_Small_BaseColor.png"
       },
       {
         "name": "NormalMap_Texture2",
