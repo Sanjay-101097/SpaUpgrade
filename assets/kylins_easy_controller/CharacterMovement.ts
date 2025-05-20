@@ -13,10 +13,8 @@ export class CharacterMovement extends Component {
     @property
     velocity = 40;
 
-    @property
     jumpVelocity = 1.0;
 
-    @property
     maxJumpTimes: number = 0;
     private _curJumpTimes: number = 0;
 
@@ -25,15 +23,6 @@ export class CharacterMovement extends Component {
 
     @property(AnimationClip)
     moveAnimClip: AnimationClip;
-
-    @property(AnimationClip)
-    jumpBeginAnimClip: AnimationClip;
-
-    @property(AnimationClip)
-    jumpLoopAnimClip: AnimationClip;
-
-    @property(AnimationClip)
-    jumpLandAnimClip: AnimationClip;
 
     _rigidBody: RigidBody;
     _isMoving: boolean = false;
@@ -53,10 +42,7 @@ export class CharacterMovement extends Component {
         if (this._anim) {
             let clipArr = [
                 this.idleAnimClip,
-                this.moveAnimClip,
-                this.jumpBeginAnimClip,
-                this.jumpLoopAnimClip,
-                this.jumpLandAnimClip
+                this.moveAnimClip
             ];
             for (let i = 0; i < clipArr.length; ++i) {
                 let clip = clipArr[i];
@@ -107,14 +93,14 @@ export class CharacterMovement extends Component {
         }
 
         if (this._isInTheAir) {
-            if(this.jumpBeginAnimClip && this._anim){
-                let state = this._anim.getState(this.jumpBeginAnimClip.name);
-                if(state.isPlaying && state.current >= state.duration){
-                    if(this.jumpLoopAnimClip){
-                        this._anim.crossFade(this.jumpLoopAnimClip.name);
-                    }
-                }
-            }
+            // if(this.jumpBeginAnimClip && this._anim){
+            //     let state = this._anim.getState(this.jumpBeginAnimClip.name);
+            //     if(state.isPlaying && state.current >= state.duration){
+            //         if(this.jumpLoopAnimClip){
+            //             this._anim.crossFade(this.jumpLoopAnimClip.name);
+            //         }
+            //     }
+            // }
 
             if(!this._rigidBody){
                 this._currentVerticalVelocity -= 9.8 * deltaTime;
@@ -136,7 +122,7 @@ export class CharacterMovement extends Component {
         this._curJumpTimes = 0;
         if (this.moveAnimClip) {
             if(this._isMoving){
-                this._anim.crossFade(this.moveAnimClip.name, 0.5);
+                this._anim.crossFade(this.moveAnimClip.name, 0.8);
             }
             else{
                 this._anim.crossFade(this.idleAnimClip.name, 0.5);
@@ -185,9 +171,9 @@ export class CharacterMovement extends Component {
             return;
         }
         if(this._curJumpTimes == 0 || true){
-            if(this.jumpBeginAnimClip){
-                this._anim?.crossFade(this.jumpBeginAnimClip.name);
-            }
+            // if(this.jumpBeginAnimClip){
+            //     this._anim?.crossFade(this.jumpBeginAnimClip.name);
+            // }
         }
         this._curJumpTimes++;
         if(this._rigidBody){
