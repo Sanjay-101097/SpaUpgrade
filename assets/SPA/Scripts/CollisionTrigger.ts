@@ -1,4 +1,4 @@
-import { _decorator, Collider, Component, ITriggerEvent, MeshCollider, Node, tween, Vec3 } from 'cc';
+import { _decorator, Collider, Component, easing, ITriggerEvent, MeshCollider, Node, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('CollisionTrigger')
@@ -13,7 +13,7 @@ export class CollisionTrigger extends Component {
     }
 
     onTriggerEnter(event: ITriggerEvent) {
-        console.log('Triggered by:', event.otherCollider.node.name);
+        // console.log('Triggered by:', event.otherCollider.node.name);
         if(this.node.active)
             this.enable = true;
     }
@@ -24,7 +24,7 @@ export class CollisionTrigger extends Component {
     }
 
     onTriggerExit(event: ITriggerEvent) {
-        console.log('Exited trigger of:', event.otherCollider.node.name);
+        // console.log('Exited trigger of:', event.otherCollider.node.name);
     }
 
     enable : boolean = false;
@@ -37,7 +37,7 @@ export class CollisionTrigger extends Component {
                 this.enable = false
                 let node = this.node.parent.children[1]
                  this.node.parent.children[1].active = true;
-                 tween(node).to(0.3,{scale:new Vec3(1,1,1)}).call(()=>{
+                 tween(node).to(1,{scale:new Vec3(1,1,1)},{easing: "quadOut"}).call(()=>{
                     node.getComponent(MeshCollider).enabled = true;
 
                     node.setRotationFromEuler(0,1,0);
