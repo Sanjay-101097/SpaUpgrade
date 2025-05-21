@@ -146,7 +146,7 @@ export class CharacterMovement extends Component {
                 }
             }
             if (this.moveAnimClip) {
-                this._anim.getState(this.moveAnimClip.name).speed = this._velocityScale;
+                // this._anim.getState(this.moveAnimClip.name).speed = this._velocityScale;
             }
         }
         this._isMoving = true;

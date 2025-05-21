@@ -37,9 +37,13 @@ export class CollisionTrigger extends Component {
                 this.enable = false
                 let node = this.node.parent.children[1]
                  this.node.parent.children[1].active = true;
+                 this.scheduleOnce(()=>{
+                    this.node.parent.children[2].active = true;
+                 },0.5)
+                
                  tween(node).to(1,{scale:new Vec3(1,1,1)},{easing: "quadOut"}).call(()=>{
                     node.getComponent(MeshCollider).enabled = true;
-
+                    
                     node.setRotationFromEuler(0,1,0);
                     this.node.active = false
                  }).start();

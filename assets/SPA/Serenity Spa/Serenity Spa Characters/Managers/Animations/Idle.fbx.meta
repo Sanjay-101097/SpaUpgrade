@@ -2,24 +2,24 @@
   "ver": "2.3.13",
   "importer": "fbx",
   "imported": true,
-  "uuid": "0722a7c1-673d-42df-a7ca-1eea11227086",
+  "uuid": "a4b247f8-c80d-449e-b856-a7050a277f62",
   "files": [
     "__original-animation-0.cconb"
   ],
   "subMetas": {
-    "73b7f": {
+    "18d6f": {
       "importer": "gltf-animation",
-      "uuid": "0722a7c1-673d-42df-a7ca-1eea11227086@73b7f",
+      "uuid": "a4b247f8-c80d-449e-b856-a7050a277f62@18d6f",
       "displayName": "",
-      "id": "73b7f",
-      "name": "Take 001.animation",
+      "id": "18d6f",
+      "name": "mixamo.com.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
         "sample": 30,
         "span": {
           "from": 0,
-          "to": 1.7666666507720947
+          "to": 0.06666667014360428
         },
         "events": []
       },
@@ -30,12 +30,12 @@
       ],
       "subMetas": {}
     },
-    "179d1": {
+    "503de": {
       "importer": "gltf-scene",
-      "uuid": "0722a7c1-673d-42df-a7ca-1eea11227086@179d1",
+      "uuid": "a4b247f8-c80d-449e-b856-a7050a277f62@503de",
       "displayName": "",
-      "id": "179d1",
-      "name": "serenity_grab_and_carry_root_Idle_Loop.prefab",
+      "id": "503de",
+      "name": "Idle.prefab",
       "userData": {
         "gltfIndex": 0
       },
@@ -54,16 +54,16 @@
     },
     "animationImportSettings": [
       {
-        "name": "Take 001",
-        "duration": 1.7666666507720947,
+        "name": "mixamo.com",
+        "duration": 0.06666667014360428,
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "mixamo.com",
             "from": 0,
-            "to": 1.7666666507720947,
+            "to": 0.06666667014360428,
             "wrapMode": 2,
-            "previousId": "73b7f"
+            "previousId": "18d6f"
           }
         ]
       }
@@ -92,7 +92,7 @@
       "textures": [],
       "materials": [],
       "scenes": [
-        "0722a7c1-673d-42df-a7ca-1eea11227086@179d1"
+        "a4b247f8-c80d-449e-b856-a7050a277f62@503de"
       ]
     }
   }
