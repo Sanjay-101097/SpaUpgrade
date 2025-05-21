@@ -492,7 +492,16 @@
               "__uuid__": "2f2ff05c-e684-41ae-ae01-2ae6bfac3598@6c48a",
               "__expectedType__": "cc.Texture2D"
             },
-            "albedoScale": 0.800000011920929
+            "albedoScale": 1.4,
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 10,
+              "g": 10,
+              "b": 10,
+              "a": 255
+            },
+            "emissiveScale": 2.1,
+            "shininessExponent": 0
           },
           {},
           {},
@@ -563,7 +572,86 @@
               "__uuid__": "bb7a0852-b11c-49f3-8b9e-e30c75b66efe@6c48a",
               "__expectedType__": "cc.Texture2D"
             },
-            "albedoScale": 0.800000011920929
+            "albedoScale": 2
+          },
+          {},
+          {},
+          {}
+        ]
+      },
+      "6003c316-56fb-4f18-9a32-6211dd30632d@0f31a": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "6003c316-56fb-4f18-9a32-6211dd30632d@91dcf",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 31,
+              "g": 25,
+              "b": 19,
+              "a": 255
+            },
+            "emissiveScale": 2.7,
+            "shininessExponent": 0
           },
           {},
           {},
