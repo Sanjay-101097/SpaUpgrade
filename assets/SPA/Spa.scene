@@ -4603,7 +4603,7 @@
     "mainCamera": null,
     "velocity": 6,
     "idleAnimClip": {
-      "__uuid__": "b88fb7b8-1d05-43cd-acde-2562c6063ed8@73b7f",
+      "__uuid__": "0722a7c1-673d-42df-a7ca-1eea11227086@73b7f",
       "__expectedType__": "cc.AnimationClip"
     },
     "moveAnimClip": {

@@ -2,24 +2,24 @@
   "ver": "2.3.13",
   "importer": "fbx",
   "imported": true,
-  "uuid": "b88fb7b8-1d05-43cd-acde-2562c6063ed8",
+  "uuid": "0722a7c1-673d-42df-a7ca-1eea11227086",
   "files": [
     "__original-animation-0.cconb"
   ],
   "subMetas": {
     "73b7f": {
       "importer": "gltf-animation",
-      "uuid": "b88fb7b8-1d05-43cd-acde-2562c6063ed8@73b7f",
+      "uuid": "0722a7c1-673d-42df-a7ca-1eea11227086@73b7f",
       "displayName": "",
       "id": "73b7f",
-      "name": "Idle.animation",
+      "name": "Take 001.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
         "sample": 30,
         "span": {
           "from": 0,
-          "to": 4.666666507720947
+          "to": 1.7666666507720947
         },
         "events": []
       },
@@ -30,12 +30,12 @@
       ],
       "subMetas": {}
     },
-    "42cce": {
+    "179d1": {
       "importer": "gltf-scene",
-      "uuid": "b88fb7b8-1d05-43cd-acde-2562c6063ed8@42cce",
+      "uuid": "0722a7c1-673d-42df-a7ca-1eea11227086@179d1",
       "displayName": "",
-      "id": "42cce",
-      "name": "serenity_grab_and_carry_root_Idle.prefab",
+      "id": "179d1",
+      "name": "serenity_grab_and_carry_root_Idle_Loop.prefab",
       "userData": {
         "gltfIndex": 0
       },
@@ -55,13 +55,13 @@
     "animationImportSettings": [
       {
         "name": "Take 001",
-        "duration": 4.666666507720947,
+        "duration": 1.7666666507720947,
         "fps": 30,
         "splits": [
           {
-            "name": "Idle",
+            "name": "Take 001",
             "from": 0,
-            "to": 4.666666507720947,
+            "to": 1.7666666507720947,
             "wrapMode": 2,
             "previousId": "73b7f"
           }
@@ -92,7 +92,7 @@
       "textures": [],
       "materials": [],
       "scenes": [
-        "b88fb7b8-1d05-43cd-acde-2562c6063ed8@42cce"
+        "0722a7c1-673d-42df-a7ca-1eea11227086@179d1"
       ]
     }
   }
