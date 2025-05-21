@@ -421,8 +421,7 @@
         "_techIdx": 0,
         "_defines": [
           {
-            "DCC_APP_NAME": 5,
-            "USE_ALBEDO_MAP": true
+            "DCC_APP_NAME": 5
           },
           {},
           {},
@@ -468,11 +467,13 @@
         ],
         "_props": [
           {
-            "mainTexture": {
-              "__uuid__": "8fdddb48-d6e0-4c03-9b69-d7c09ff3d812@6c48a",
-              "__expectedType__": "cc.Texture2D"
-            },
-            "albedoScale": 0.800000011920929
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 238,
+              "g": 76,
+              "b": 76,
+              "a": 255
+            }
           },
           {},
           {},
