@@ -1,0 +1,556 @@
+{
+  "ver": "2.3.13",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "4050de72-7757-4dee-947f-8c079629e4da",
+  "files": [],
+  "subMetas": {
+    "29991": {
+      "importer": "gltf-material",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@29991",
+      "displayName": "",
+      "id": "29991",
+      "name": "CustomerA_Clothing_tex.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "30732": {
+      "importer": "gltf-skeleton",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@30732",
+      "displayName": "",
+      "id": "30732",
+      "name": "UnnamedSkeleton-0.skeleton",
+      "userData": {
+        "gltfIndex": 0,
+        "jointsLength": 1
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "784a4": {
+      "importer": "gltf-mesh",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@784a4",
+      "displayName": "",
+      "id": "784a4",
+      "name": "CustomerA_Head.mesh",
+      "userData": {
+        "gltfIndex": 0,
+        "triangleCount": 1156
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1048c": {
+      "importer": "gltf-mesh",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@1048c",
+      "displayName": "",
+      "id": "1048c",
+      "name": "CustomerA_Hair.mesh",
+      "userData": {
+        "gltfIndex": 1,
+        "triangleCount": 800
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "47d66": {
+      "importer": "gltf-mesh",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@47d66",
+      "displayName": "",
+      "id": "47d66",
+      "name": "CustomerA_Body.mesh",
+      "userData": {
+        "gltfIndex": 2,
+        "triangleCount": 2074
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d762d": {
+      "importer": "gltf-mesh",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@d762d",
+      "displayName": "",
+      "id": "d762d",
+      "name": "CustomerA_Clothing.mesh",
+      "userData": {
+        "gltfIndex": 3,
+        "triangleCount": 1098
+      },
+      "ver": "1.1.1",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f1394": {
+      "importer": "gltf-skeleton",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@f1394",
+      "displayName": "",
+      "id": "f1394",
+      "name": "UnnamedSkeleton-1.skeleton",
+      "userData": {
+        "gltfIndex": 1,
+        "jointsLength": 1
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "75ee4": {
+      "importer": "gltf-skeleton",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@75ee4",
+      "displayName": "",
+      "id": "75ee4",
+      "name": "UnnamedSkeleton-2.skeleton",
+      "userData": {
+        "gltfIndex": 2,
+        "jointsLength": 49
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a72ab": {
+      "importer": "gltf-skeleton",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@a72ab",
+      "displayName": "",
+      "id": "a72ab",
+      "name": "UnnamedSkeleton-3.skeleton",
+      "userData": {
+        "gltfIndex": 3,
+        "jointsLength": 28
+      },
+      "ver": "1.0.1",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dfe29": {
+      "importer": "gltf-embeded-image",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@dfe29",
+      "displayName": "",
+      "id": "dfe29",
+      "name": "file3.image",
+      "userData": {
+        "gltfIndex": 3,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Head_Col.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5189c": {
+      "importer": "texture",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@5189c",
+      "displayName": "",
+      "id": "5189c",
+      "name": "file6.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Hair_Col.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "91dcf": {
+      "importer": "texture",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@91dcf",
+      "displayName": "",
+      "id": "91dcf",
+      "name": "file4.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/SPA/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Body_Col.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a562b": {
+      "importer": "texture",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@a562b",
+      "displayName": "",
+      "id": "a562b",
+      "name": "file3.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "4050de72-7757-4dee-947f-8c079629e4da@dfe29"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c4ad5": {
+      "importer": "gltf-material",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@c4ad5",
+      "displayName": "",
+      "id": "c4ad5",
+      "name": "CustomerA_Head_tex.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1ec0c": {
+      "importer": "gltf-material",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@1ec0c",
+      "displayName": "",
+      "id": "1ec0c",
+      "name": "CustomerA_Hair_Tex.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b48a7": {
+      "importer": "gltf-material",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@b48a7",
+      "displayName": "",
+      "id": "b48a7",
+      "name": "CustomerA_Body_tex.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ea41d": {
+      "importer": "gltf-scene",
+      "uuid": "4050de72-7757-4dee-947f-8c079629e4da@ea41d",
+      "displayName": "",
+      "id": "ea41d",
+      "name": "customer_A.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "db://assets/SPA/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Head_Col.jpg"
+      },
+      {
+        "name": "file6",
+        "uri": "db://assets/SPA/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Hair_Col.jpg"
+      },
+      {
+        "name": "file4",
+        "uri": "db://assets/SPA/Serenity Spa Characters/Costumer/CustomerA/CustomerA_Body_Col.jpg"
+      },
+      {
+        "name": "file3",
+        "uri": "4050de72-7757-4dee-947f-8c079629e4da@dfe29"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "lods": {
+      "enable": false,
+      "hasBuiltinLOD": false,
+      "options": [
+        {
+          "screenRatio": 0.25,
+          "faceCount": 1
+        },
+        {
+          "screenRatio": 0.125,
+          "faceCount": 0.25
+        },
+        {
+          "screenRatio": 0.01,
+          "faceCount": 0.1
+        }
+      ]
+    },
+    "assetFinder": {
+      "meshes": [
+        "4050de72-7757-4dee-947f-8c079629e4da@784a4",
+        "4050de72-7757-4dee-947f-8c079629e4da@1048c",
+        "4050de72-7757-4dee-947f-8c079629e4da@47d66",
+        "4050de72-7757-4dee-947f-8c079629e4da@d762d"
+      ],
+      "skeletons": [
+        "4050de72-7757-4dee-947f-8c079629e4da@30732",
+        "4050de72-7757-4dee-947f-8c079629e4da@f1394",
+        "4050de72-7757-4dee-947f-8c079629e4da@75ee4",
+        "4050de72-7757-4dee-947f-8c079629e4da@a72ab"
+      ],
+      "textures": [
+        "4050de72-7757-4dee-947f-8c079629e4da@d20e9",
+        "4050de72-7757-4dee-947f-8c079629e4da@5189c",
+        "4050de72-7757-4dee-947f-8c079629e4da@91dcf",
+        "4050de72-7757-4dee-947f-8c079629e4da@a562b"
+      ],
+      "materials": [
+        "4050de72-7757-4dee-947f-8c079629e4da@c4ad5",
+        "4050de72-7757-4dee-947f-8c079629e4da@1ec0c",
+        "4050de72-7757-4dee-947f-8c079629e4da@b48a7",
+        "4050de72-7757-4dee-947f-8c079629e4da@29991"
+      ],
+      "scenes": [
+        "4050de72-7757-4dee-947f-8c079629e4da@ea41d"
+      ]
+    },
+    "materials": {
+      "4050de72-7757-4dee-947f-8c079629e4da@29991": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5
+          },
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 238,
+              "g": 76,
+              "b": 76,
+              "a": 255
+            }
+          },
+          {},
+          {},
+          {}
+        ]
+      },
+      "4050de72-7757-4dee-947f-8c079629e4da@b48a7": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "__editorExtras__": {},
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "c46908e9-5ba6-4435-80ad-50162a3a4273@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "albedoScale": 0.800000011920929
+          },
+          {},
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}
