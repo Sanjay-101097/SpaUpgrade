@@ -2,16 +2,16 @@
   "ver": "1.0.27",
   "importer": "image",
   "imported": true,
-  "uuid": "24dbd09f-3398-45d2-a97f-be939bed6273",
+  "uuid": "d789b47e-008a-4ffb-98c7-1ed8517518da",
   "files": [
-    ".json",
-    ".png"
+    ".jpg",
+    ".json"
   ],
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "24dbd09f-3398-45d2-a97f-be939bed6273@6c48a",
-      "displayName": "Station_Waiting Area_Chair_BaseColor",
+      "uuid": "d789b47e-008a-4ffb-98c7-1ed8517518da@6c48a",
+      "displayName": "plainWoodFloorV2_basecolor_saturated",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -22,7 +22,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "24dbd09f-3398-45d2-a97f-be939bed6273",
+        "imageUuidOrDatabaseUri": "d789b47e-008a-4ffb-98c7-1ed8517518da",
         "visible": false
       },
       "ver": "1.0.22",
@@ -37,6 +37,6 @@
     "type": "texture",
     "hasAlpha": false,
     "fixAlphaTransparencyArtifacts": false,
-    "redirect": "24dbd09f-3398-45d2-a97f-be939bed6273@6c48a"
+    "redirect": "d789b47e-008a-4ffb-98c7-1ed8517518da@6c48a"
   }
 }

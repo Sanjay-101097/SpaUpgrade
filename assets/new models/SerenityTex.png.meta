@@ -2,7 +2,7 @@
   "ver": "1.0.27",
   "importer": "image",
   "imported": true,
-  "uuid": "3f4572f0-011c-4b7a-b2b3-18d0d5fc8795",
+  "uuid": "c6c059a6-15d3-45a1-8db4-18096946eecf",
   "files": [
     ".json",
     ".png"
@@ -10,8 +10,8 @@
   "subMetas": {
     "6c48a": {
       "importer": "texture",
-      "uuid": "3f4572f0-011c-4b7a-b2b3-18d0d5fc8795@6c48a",
-      "displayName": "Cartoon_Texture_2048",
+      "uuid": "c6c059a6-15d3-45a1-8db4-18096946eecf@6c48a",
+      "displayName": "SerenityTex",
       "id": "6c48a",
       "name": "texture",
       "userData": {
@@ -22,7 +22,7 @@
         "mipfilter": "none",
         "anisotropy": 0,
         "isUuid": true,
-        "imageUuidOrDatabaseUri": "3f4572f0-011c-4b7a-b2b3-18d0d5fc8795",
+        "imageUuidOrDatabaseUri": "c6c059a6-15d3-45a1-8db4-18096946eecf",
         "visible": false
       },
       "ver": "1.0.22",
@@ -37,6 +37,6 @@
     "type": "texture",
     "hasAlpha": true,
     "fixAlphaTransparencyArtifacts": false,
-    "redirect": "3f4572f0-011c-4b7a-b2b3-18d0d5fc8795@6c48a"
+    "redirect": "c6c059a6-15d3-45a1-8db4-18096946eecf@6c48a"
   }
 }
