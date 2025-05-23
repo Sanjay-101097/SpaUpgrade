@@ -1,27 +1,16 @@
-import { _decorator, Node, EventTouch, Touch, Component, UITransform, Input, EventKeyboard, KeyCode, v2, Vec3, input, Scene, director, EventMouse, macro, view, screen } from 'cc';
+import { _decorator, Node, EventTouch, Touch, Component, UITransform, Input, EventKeyboard, KeyCode, v2, Vec3, input, Scene, director, EventMouse, macro, view, screen, tween, easing, Tween } from 'cc';
 import { EasyControllerEvent } from './EasyController';
 const { ccclass, property } = _decorator;
-
-/****
- * split screen into three parts.
- * ---------------------------------------------
- *                                              |
- *           1.camera rotation zone             |
- *                                              |
- *----------------------------------------------|
- *                      |                       |
- * 2.movement ctrl zone  | 3.camera rotation zone|
- *                      |                       |
- * ----------------------------------------------
- * 
- * multi-touch for camera zoom.
- *  */
 
 @ccclass('UI_Joystick')
 export class UI_Joystick extends Component {
 
-    private static _inst:UI_Joystick = null;
-    public static get inst():UI_Joystick{
+
+    @property(Node)
+    DragLable: Node = null;
+
+    private static _inst: UI_Joystick = null;
+    public static get inst(): UI_Joystick {
         return this._inst;
     }
 
@@ -44,6 +33,7 @@ export class UI_Joystick extends Component {
 
     protected onLoad(): void {
         UI_Joystick._inst = this;
+
     }
 
     start() {
@@ -66,6 +56,26 @@ export class UI_Joystick extends Component {
         // this._ctrlRoot.node.active = false;
         this._ctrlPointer = this._ctrlRoot.node.getChildByName('pointer');
 
+        tween(this._ctrlPointer)
+            .then(
+                tween()
+                    .to(0.6, { position: new Vec3(86, 46, 0) }, { easing: "quadIn" })
+                    .to(0.3, { position: new Vec3(66, 66, 0) }, { easing: "smooth" })
+                    .to(0.6, { position: new Vec3(0, 0, 0) }, { easing: "quartOut" })
+            )
+            .repeatForever()
+            .start();
+
+        // tween(this.DragLable)
+        //     .then(
+        //         tween()
+        //             .to(0.6, { position: new Vec3(86, 46, 0) }, { easing: "quadIn" })
+        //             .to(0.3, { position: new Vec3(66, 66, 0) }, { easing: "smooth" })
+        //             .to(0.6, { position: new Vec3(0, 0, 0) }, { easing: "quartOut" })
+        //     )
+        //     .repeatForever()
+        //     .start();
+
         this._buttons = this.node.getChildByName('buttons');
 
         this._key2buttonMap[KeyCode.KEY_J] = 'btn_slot_0';
@@ -76,7 +86,7 @@ export class UI_Joystick extends Component {
 
         input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
         input.on(Input.EventType.KEY_UP, this.onKeyUp, this);
-        input.on(Input.EventType.MOUSE_WHEEL,this.onMouseWheel, this);
+        input.on(Input.EventType.MOUSE_WHEEL, this.onMouseWheel, this);
 
         this._scene = director.getScene();
     }
@@ -84,27 +94,28 @@ export class UI_Joystick extends Component {
     onDestroy() {
         input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
         input.off(Input.EventType.KEY_UP, this.onKeyUp, this);
-        input.off(Input.EventType.MOUSE_WHEEL,this.onMouseWheel, this);
+        input.off(Input.EventType.MOUSE_WHEEL, this.onMouseWheel, this);
 
         UI_Joystick._inst = null;
     }
 
-    bindKeyToButton(keyCode:KeyCode, btnName:string){
+    bindKeyToButton(keyCode: KeyCode, btnName: string) {
         this._key2buttonMap[keyCode] = btnName;
     }
 
-    setButtonVisible(btnName:string, visible:boolean){
+    setButtonVisible(btnName: string, visible: boolean) {
         let node = this._buttons?.getChildByName(btnName);
-        if(node){
+        if (node) {
             node.active = visible;
         }
     }
 
-    getButtonByName(btnName:string):Node{
+    getButtonByName(btnName: string): Node {
         return this._buttons.getChildByName(btnName);
     }
 
     onTouchStart_Movement(event: EventTouch) {
+        Tween.stopAll();
         let touches = event.getTouches();
         for (let i = 0; i < touches.length; ++i) {
             let touch = touches[i];
@@ -195,7 +206,7 @@ export class UI_Joystick extends Component {
         let dy = touchB.getLocationY() - touchB.getLocationY();
         return Math.sqrt(dx * dx + dy * dy);
     }
-    
+
     private onTouchStart_CameraCtrl(event: EventTouch) {
         let touches = event.getAllTouches();
         this._cameraTouchA = null;
@@ -285,10 +296,10 @@ export class UI_Joystick extends Component {
                 this.updateDirection();
             }
         }
-        else{
+        else {
             let btnName = this._key2buttonMap[keyCode];
-            if(btnName){
-                this._scene.emit(EasyControllerEvent.BUTTON,btnName);
+            if (btnName) {
+                this._scene.emit(EasyControllerEvent.BUTTON, btnName);
             }
         }
     }
@@ -304,15 +315,15 @@ export class UI_Joystick extends Component {
         }
     }
 
-    onMouseWheel(event:EventMouse){
+    onMouseWheel(event: EventMouse) {
         let delta = event.getScrollY() * 0.1;
         console.log(delta);
         this._scene.emit(EasyControllerEvent.CAMERA_ZOOM, delta);
     }
 
-    onButtonSlot(event){
+    onButtonSlot(event) {
         let btnName = event.target.name;
-        this._scene.emit(EasyControllerEvent.BUTTON,btnName);
+        this._scene.emit(EasyControllerEvent.BUTTON, btnName);
     }
 
     private _key2dirMap = null;

@@ -38,7 +38,7 @@ export class ThirdPersonCamera extends Component {
 
 
     start() {
-        EasyController.on(EasyControllerEvent.CAMERA_ROTATE, this.onCameraRotate, this);
+        // EasyController.on(EasyControllerEvent.CAMERA_ROTATE, this.onCameraRotate, this);
         EasyController.on(EasyControllerEvent.CAMERA_ZOOM, this.onCameraZoom, this);
 
         this._targetLen = this.len;
