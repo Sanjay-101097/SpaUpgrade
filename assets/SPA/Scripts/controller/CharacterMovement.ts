@@ -139,10 +139,11 @@ export class CharacterMovement extends Component {
 
     private _tmp = v3();
    onMovement(degree: number, offset: number) {
+    this.arrow.active = true;
     const dir = new Vec3();
     Vec3.subtract(dir, this.desPos[CharacterMovement.id], this.arrow.worldPosition);
     Vec3.normalize(dir, dir);
-
+    
     // Calculate world-facing angle for the arrow
     const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
 
@@ -179,6 +180,7 @@ export class CharacterMovement extends Component {
 }
 
     onMovementRelease() {
+        this.arrow.active = false;
         if (!this._isInTheAir && this.idleAnimClip) {
             this._anim?.crossFade(this.idleAnimClip.name, 0.5);
         }

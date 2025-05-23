@@ -544,7 +544,7 @@
         "_props": [
           {
             "mainTexture": {
-              "__uuid__": "c6c059a6-15d3-45a1-8db4-18096946eecf@6c48a",
+              "__uuid__": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@0a1ef",
               "__expectedType__": "cc.Texture2D"
             }
           },
@@ -727,7 +727,7 @@
               "a": 255
             },
             "mainTexture": {
-              "__uuid__": "d789b47e-008a-4ffb-98c7-1ed8517518da@6c48a",
+              "__uuid__": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@05da8",
               "__expectedType__": "cc.Texture2D"
             }
           },

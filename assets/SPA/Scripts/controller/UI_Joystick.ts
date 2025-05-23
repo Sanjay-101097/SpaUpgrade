@@ -1,4 +1,4 @@
-import { _decorator, Node, EventTouch, Touch, Component, UITransform, Input, EventKeyboard, KeyCode, v2, Vec3, input, Scene, director, EventMouse, macro, view, screen, tween, easing, Tween } from 'cc';
+import { _decorator, Node, EventTouch, Touch, Component, UITransform, Input, EventKeyboard, KeyCode, v2, Vec3, input, Scene, director, EventMouse, macro, view, screen, tween, easing, Tween, TweenAction } from 'cc';
 import { EasyControllerEvent } from './EasyController';
 const { ccclass, property } = _decorator;
 
@@ -36,6 +36,8 @@ export class UI_Joystick extends Component {
 
     }
 
+    
+
     start() {
         let checkerCamera = this.node.getChildByName('checker_camera').getComponent(UITransform);
         checkerCamera.node.on(Input.EventType.TOUCH_START, this.onTouchStart_CameraCtrl, this);
@@ -66,15 +68,14 @@ export class UI_Joystick extends Component {
             .repeatForever()
             .start();
 
-        // tween(this.DragLable)
-        //     .then(
-        //         tween()
-        //             .to(0.6, { position: new Vec3(86, 46, 0) }, { easing: "quadIn" })
-        //             .to(0.3, { position: new Vec3(66, 66, 0) }, { easing: "smooth" })
-        //             .to(0.6, { position: new Vec3(0, 0, 0) }, { easing: "quartOut" })
-        //     )
-        //     .repeatForever()
-        //     .start();
+        tween(this.DragLable)
+            .then(
+                tween()
+                    .to(0.6, { scale: new Vec3(1.1, 1.1, 1) })
+                    .to(0.3, { scale: new Vec3(1, 1, 1) })
+            )
+            .repeatForever()
+            .start();
 
         this._buttons = this.node.getChildByName('buttons');
 
@@ -115,7 +116,9 @@ export class UI_Joystick extends Component {
     }
 
     onTouchStart_Movement(event: EventTouch) {
-        Tween.stopAll();
+        Tween.stopAllByTarget(this._ctrlPointer);
+        Tween.stopAllByTarget(this.DragLable);
+        this.DragLable.active = false;
         let touches = event.getTouches();
         for (let i = 0; i < touches.length; ++i) {
             let touch = touches[i];
