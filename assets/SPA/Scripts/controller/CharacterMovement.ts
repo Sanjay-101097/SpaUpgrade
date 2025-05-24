@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, v3, RigidBody, Vec3, find, Camera, SkeletalAnimation, AnimationClip, Collider, ICollisionEvent } from 'cc';
+import { _decorator, Component, Node, v3, RigidBody, Vec3, find, Camera, SkeletalAnimation, AnimationClip, Collider, ICollisionEvent, AudioClip, AudioSource } from 'cc';
 import { EasyController, EasyControllerEvent } from './EasyController';
 const { ccclass, property } = _decorator;
 
@@ -10,7 +10,7 @@ export class CharacterMovement extends Component {
     @property(Camera)
     mainCamera: Camera;
 
-    private desPos: Vec3[] = [new Vec3(0, 0, 4), new Vec3(6, 0, 4), new Vec3(-12, 0, -12), new Vec3(-11, 0.3, 4.8), new Vec3(-12, 0, -7)];
+    private desPos: Vec3[] = [new Vec3(0, 0, 4), new Vec3(6, 0, 4), new Vec3(-20, 0, -16), new Vec3(-14, 0, 7), new Vec3(-3, 0, -8)];
 
     public static id = 0;
 
@@ -31,6 +31,8 @@ export class CharacterMovement extends Component {
     @property(AnimationClip)
     moveAnimClip: AnimationClip;
 
+    audiosource: AudioSource;
+
     _rigidBody: RigidBody;
     _isMoving: boolean = false;
     _velocityScale: number = 1.0;
@@ -41,6 +43,7 @@ export class CharacterMovement extends Component {
     private _anim: SkeletalAnimation;
 
     start() {
+        this.audiosource = this.node.getComponent(AudioSource);
         if (!this.mainCamera) {
             this.mainCamera = find('Main Camera')?.getComponent(Camera);
         }
@@ -138,48 +141,56 @@ export class CharacterMovement extends Component {
     }
 
     private _tmp = v3();
-   onMovement(degree: number, offset: number) {
-    this.arrow.active = true;
-    const dir = new Vec3();
-    Vec3.subtract(dir, this.desPos[CharacterMovement.id], this.arrow.worldPosition);
-    Vec3.normalize(dir, dir);
-    
-    // Calculate world-facing angle for the arrow
-    const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
-
-    // Set world rotation on the arrow, making it independent of parent's rotation
-    this.arrow.setWorldRotationFromEuler(0, angleY, 0);
-
-    // Handle character rotation
-    let cameraRotationY = 0;
-    if (this.mainCamera) {
-        cameraRotationY = this.mainCamera.node.eulerAngles.y;
-    }
-
-    this._velocityScale = offset;
-
-    // This is the player's movement direction
-    this._tmp.set(0, cameraRotationY + degree - 90 + 180, 0);
-    this.node.setRotationFromEuler(this._tmp);
-
-    // Handle animation
-    if (this._anim) {
-        if (!this._isMoving && !this._isInTheAir) {
-            if (this.moveAnimClip) {
-                this._anim.crossFade(this.moveAnimClip.name, 0.1);
-            }
+    onMovement(degree: number, offset: number) {
+        if (!this.audiosource.loop) {
+            this.audiosource.loop = true;
+            this.audiosource.play();
+            this.audiosource.volume = 0.5;
         }
 
-        // Optional: adjust speed dynamically
-        // if (this.moveAnimClip) {
-        //     this._anim.getState(this.moveAnimClip.name).speed = this._velocityScale;
-        // }
+        this.arrow.active = true;
+        const dir = new Vec3();
+        Vec3.subtract(dir, this.desPos[CharacterMovement.id], this.arrow.worldPosition);
+        Vec3.normalize(dir, dir);
+
+        // Calculate world-facing angle for the arrow
+        const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
+
+        // Set world rotation on the arrow, making it independent of parent's rotation
+        this.arrow.setWorldRotationFromEuler(0, angleY, 0);
+
+        // Handle character rotation
+        let cameraRotationY = 0;
+        if (this.mainCamera) {
+            cameraRotationY = this.mainCamera.node.eulerAngles.y;
+        }
+
+        this._velocityScale = offset;
+
+        // This is the player's movement direction
+        this._tmp.set(0, cameraRotationY + degree - 90 + 180, 0);
+        this.node.setRotationFromEuler(this._tmp);
+
+        // Handle animation
+        if (this._anim) {
+            if (!this._isMoving && !this._isInTheAir) {
+                if (this.moveAnimClip) {
+                    this._anim.crossFade(this.moveAnimClip.name, 0.1);
+                }
+            }
+
+            // Optional: adjust speed dynamically
+            // if (this.moveAnimClip) {
+            //     this._anim.getState(this.moveAnimClip.name).speed = this._velocityScale;
+            // }
+        }
+
+        this._isMoving = true;
     }
 
-    this._isMoving = true;
-}
-
     onMovementRelease() {
+        this.audiosource.loop = false;
+        this.audiosource.stop();
         this.arrow.active = false;
         if (!this._isInTheAir && this.idleAnimClip) {
             this._anim?.crossFade(this.idleAnimClip.name, 0.5);

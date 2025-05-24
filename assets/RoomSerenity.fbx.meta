@@ -248,15 +248,15 @@
       "userData": {
         "wrapModeS": "repeat",
         "wrapModeT": "repeat",
-        "minfilter": "linear",
-        "magfilter": "linear",
+        "minfilter": "nearest",
+        "magfilter": "nearest",
         "mipfilter": "none",
-        "anisotropy": 0,
+        "anisotropy": 0.8,
         "isUuid": false,
         "imageUuidOrDatabaseUri": "db://assets/new models/SerenityTex.png"
       },
       "ver": "1.0.22",
-      "imported": true,
+      "imported": false,
       "files": [
         ".json"
       ],
@@ -544,7 +544,7 @@
         "_props": [
           {
             "mainTexture": {
-              "__uuid__": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@0a1ef",
+              "__uuid__": "113d811f-e1ed-4e51-be7a-8476873d4d38@6c48a",
               "__expectedType__": "cc.Texture2D"
             }
           },
@@ -727,7 +727,7 @@
               "a": 255
             },
             "mainTexture": {
-              "__uuid__": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@05da8",
+              "__uuid__": "652e6c4d-4892-47d6-902b-164b7c87b6ca@6c48a",
               "__expectedType__": "cc.Texture2D"
             }
           },

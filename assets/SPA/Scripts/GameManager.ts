@@ -1,14 +1,19 @@
-import { _decorator, AnimationClip, Collider, Component, instantiate, Label, Node, Prefab, SkeletalAnimation, tween, Vec3 } from 'cc';
+import { _decorator, AnimationClip, AudioClip, AudioSource, Collider, Component, instantiate, Label, Node, Prefab, SkeletalAnimation, tween, Vec3 } from 'cc';
 import { CharacterMovement } from './controller/CharacterMovement';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
 export class GameManager extends Component {
 
-    private customerPos: Vec3[] = [new Vec3(0.45, 0.3, 8), new Vec3(6.35, 0.3, 8), new Vec3(-11, 0.3, 4.8), new Vec3(-12, 0, -9), new Vec3(-12, 0, -7)];
+    private customerPos: Vec3[] = [new Vec3(10.5, 0, -3.8), new Vec3(10.5, 0, 2.3), new Vec3(-7, 2.5, -13), new Vec3(-20, 0, -12), new Vec3(-20, 0, -10)];
+
+    //[init(-26,0,-8),1st person(10.5,0,-3.6), 2nd person{ 1stpos(1,0,-8),  2ndpos(10.5,0,2.5)},3rd person(-7.3,2.7,-13)]
 
     @property(Node)
     customers: Node[] = []
+
+    @property(Node)
+    Upgrades: Node[] = []
 
     @property(Node)
     NoBal: Node = null;
@@ -16,6 +21,10 @@ export class GameManager extends Component {
     @property(Node)
     Desk: Node = null;
 
+    @property(AudioClip)
+    audio: AudioClip = null;
+
+    audiosource: AudioSource;
 
     @property(Prefab)
     Cash: Prefab = null;
@@ -32,13 +41,34 @@ export class GameManager extends Component {
     public Balance = 100;
 
     protected start(): void {
+
+        this.Upgrades.forEach(Unode => {
+            tween(Unode)
+            .then(
+                tween()
+                    .to(0.6, { scale: new Vec3(1.1, 1.1, 1) })
+                    .to(0.3, { scale: new Vec3(1, 1, 1) })
+            )
+            .repeatForever()
+            .start();
+        });
+        
+
+         this.audiosource = this.node.getComponent(AudioSource);
         const collider = this.Desk.getComponent(Collider);
         if (collider) {
             collider.on('onTriggerEnter', this.counter, this);
         }
+
+        let idx = 0;
+        this.schedule(() => {
+            this.moveAnim(idx)
+            idx += 1;
+        }, 1, 2, 1)
+
     }
 
-    moveAnim(Id, node) {
+    moveAnim(Id) {
         const targetCustomer = this.customers[Id];
         let destination = this.customerPos[Id];
         const anim = targetCustomer.getComponent(SkeletalAnimation);
@@ -54,31 +84,35 @@ export class GameManager extends Component {
         }
 
         anim.crossFade(this.customersAnim[1].name, 0.1);
+        const dir = new Vec3();
+        Vec3.subtract(dir, destination, targetCustomer.worldPosition);
+        Vec3.normalize(dir, dir);
+
+        const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
+
+        targetCustomer.eulerAngles = new Vec3(0, angleY, 0);
+        let dummydes
+        if (Id == 2) {
+            dummydes = new Vec3(destination.x - 1.5, 0, destination.z);
+        } else {
+            dummydes = new Vec3(destination.x + 1, 0, destination.z - 1);
+        }
 
         // Move the character
         tween(targetCustomer)
-            .to(0.8, { position: new Vec3(destination.x, targetCustomer.position.y, targetCustomer.position.z) }).call(() => {
-                const dir = new Vec3();
-                Vec3.subtract(dir, destination, targetCustomer.worldPosition);
-                Vec3.normalize(dir, dir);
-
-                const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
-
-                targetCustomer.eulerAngles = new Vec3(0, angleY, 0);
-            })
-            .to(3, { position: destination }).call(() => {
+            .to(5, { position: dummydes }, { easing: "linear" }).call(() => {
                 anim.crossFade(this.customersAnim[2].name, 0.1);
+                targetCustomer.setPosition(destination);
                 targetCustomer.eulerAngles = new Vec3(0, 90, 0);
-
-            }).delay(0.1).call(() => {
-                if (Id < 2) {
-                    tween(node.children[0]).to(0.2, { eulerAngles: new Vec3(0, -5, 0) }).start();
-                    tween(targetCustomer).to(0.2, { eulerAngles: new Vec3(0, -15, 0) }).start();
+                if (Id == 2) {
+                    targetCustomer.eulerAngles = new Vec3(90, 0, 0);
+                    anim.crossFade(this.customersAnim[0].name, 0.1);
                 }
 
-            }).delay(2).call(() => {
+            })
+            .delay(3).call(() => {
                 if (Id < 2) {
-                    tween(node.children[0]).to(0.3, { eulerAngles: new Vec3(0, 90, 0) }).start();
+                    targetCustomer.setPosition(targetCustomer.x + 1, targetCustomer.y, targetCustomer.z - 1)
                     tween(targetCustomer).to(0.3, { eulerAngles: new Vec3(0, 90, 0) }).call(() => {
                         destination = this.customerPos[this.id];
                         this.id += 1;
@@ -106,24 +140,58 @@ export class GameManager extends Component {
             .start();
     }
 
+    MoveoutAnim() {
+        if (!this.waitingCust.length) return;
+        const targetCustomer = this.waitingCust[0];
+        this.waitingCust.splice(0, 1);
+        let destination = new Vec3(-25, 0, -5);
+        const anim = targetCustomer.getComponent(SkeletalAnimation);
+        anim.crossFade(this.customersAnim[1].name, 0.1);
+        const dir = new Vec3();
+        Vec3.subtract(dir, destination, targetCustomer.worldPosition);
+        Vec3.normalize(dir, dir);
+        const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
+
+        targetCustomer.eulerAngles = new Vec3(0, angleY, 0);
+        tween(targetCustomer)
+            .to(1, { position: destination }, { easing: "linear" })
+            .call(() => {
+
+                if (!this.waitingCust.length) return;
+                tween(this.waitingCust[0])
+                    .to(0.6, { position: this.customerPos[3] }, { easing: "linear" })
+                    .call(() => {
+                        this.Desk.getComponent(Collider).enabled = true;
+                    })
+                    .start()
+            })
+            .start();
+
+
+    }
+
 
     counter() {
-        this.Desk.getComponent(Collider).off('onTriggerEnter', this.counter, this);
-        CharacterMovement.id +=1;
+
         if (this.waitingCust.length > 0) {
+             this.audiosource.playOneShot(this.audio,0.6);
+            this.Desk.getComponent(Collider).enabled = false;
             this.Balance += 50;
             this.schedule(() => {
                 let cashNode = instantiate(this.Cash);
                 this.node.scene.addChild(cashNode);
-                cashNode.setPosition(-11, 3, -10)
-                tween(cashNode).to(0.3, { position: new Vec3(-11, 12, -17) }).call(()=>{
+                cashNode.setPosition(-21, 3, -13)
+                tween(cashNode).to(0.3, { position: new Vec3(-11, 18, -20) }).call(() => {
                     cashNode.destroy();
+
                 }).start();
-            },0.1,3)
+            }, 0.1, 3)
 
-
+            this.MoveoutAnim();
             this.Bal.string = "$" + this.Balance.toString();
-            this.waitingCust.splice(0, 1);
+            // this.waitingCust.splice(0, 1);
+        } else {
+            CharacterMovement.id += 1;
         }
 
     }
