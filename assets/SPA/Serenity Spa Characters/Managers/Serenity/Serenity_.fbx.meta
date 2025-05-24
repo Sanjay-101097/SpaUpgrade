@@ -508,7 +508,6 @@
         "_defines": [
           {
             "DCC_APP_NAME": 2,
-            "USE_ALBEDO_MAP": true,
             "HAS_EXPORTED_METALLIC": true
           },
           {},
@@ -557,7 +556,14 @@
           {
             "mainTexture": {
               "__uuid__": "9d72806d-51a5-44f5-b48f-852e6a3cc454@6c48a",
-              "__expectedType__": "cc.Texture2D"
+              "__expectedType__": "cc.TextureBase"
+            },
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 216,
+              "g": 36,
+              "b": 86,
+              "a": 255
             },
             "shininessExponent": 20
           },

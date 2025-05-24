@@ -239,6 +239,26 @@
       ],
       "subMetas": {}
     },
+    "5e49e": {
+      "importer": "gltf-embeded-image",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@5e49e",
+      "displayName": "",
+      "id": "5e49e",
+      "name": "base_color_texture-0.image",
+      "userData": {
+        "gltfIndex": 0,
+        "fixAlphaTransparencyArtifacts": true,
+        "hasAlpha": true,
+        "type": "texture"
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
     "0a1ef": {
       "importer": "texture",
       "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@0a1ef",
@@ -252,11 +272,11 @@
         "magfilter": "nearest",
         "mipfilter": "none",
         "anisotropy": 0.8,
-        "isUuid": false,
-        "imageUuidOrDatabaseUri": "db://assets/new models/SerenityTex.png"
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@5e49e"
       },
       "ver": "1.0.22",
-      "imported": false,
+      "imported": true,
       "files": [
         ".json"
       ],
@@ -402,7 +422,7 @@
     "imageMetas": [
       {
         "name": "base_color_texture",
-        "uri": "db://assets/new models/SerenityTex.png"
+        "uri": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@5e49e"
       },
       {
         "name": "base_color_texture",
