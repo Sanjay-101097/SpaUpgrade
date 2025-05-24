@@ -910,9 +910,9 @@
           {
             "mainColor": {
               "__type__": "cc.Color",
-              "r": 0,
-              "g": 0,
-              "b": 0,
+              "r": 255,
+              "g": 117,
+              "b": 249,
               "a": 255
             },
             "shininessExponent": 25,
