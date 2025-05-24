@@ -147,17 +147,19 @@ export class CharacterMovement extends Component {
             this.audiosource.play();
             this.audiosource.volume = 0.5;
         }
+        if (CharacterMovement.id < 5) {
+            this.arrow.active = true;
+            const dir = new Vec3();
+            Vec3.subtract(dir, this.desPos[CharacterMovement.id], this.arrow.worldPosition);
+            Vec3.normalize(dir, dir);
 
-        this.arrow.active = true;
-        const dir = new Vec3();
-        Vec3.subtract(dir, this.desPos[CharacterMovement.id], this.arrow.worldPosition);
-        Vec3.normalize(dir, dir);
+            // Calculate world-facing angle for the arrow
+            const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
 
-        // Calculate world-facing angle for the arrow
-        const angleY = Math.atan2(dir.x, dir.z) * 180 / Math.PI;
+            // Set world rotation on the arrow, making it independent of parent's rotation
+            this.arrow.setWorldRotationFromEuler(0, angleY, 0);
+        }
 
-        // Set world rotation on the arrow, making it independent of parent's rotation
-        this.arrow.setWorldRotationFromEuler(0, angleY, 0);
 
         // Handle character rotation
         let cameraRotationY = 0;

@@ -1,11 +1,12 @@
-import { _decorator, AnimationClip, AudioClip, AudioSource, Collider, Component, instantiate, Label, Node, Prefab, SkeletalAnimation, tween, Vec3 } from 'cc';
+import { _decorator, AnimationClip, AudioClip, AudioSource, Collider, Component, instantiate, Label, Node, Prefab, SkeletalAnimation, sys, tween, Vec3 } from 'cc';
 import { CharacterMovement } from './controller/CharacterMovement';
+import { CollisionTrigger } from './CollisionTrigger';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameManager')
 export class GameManager extends Component {
 
-    private customerPos: Vec3[] = [new Vec3(10.5, 0, -3.8), new Vec3(10.5, 0, 2.3), new Vec3(-7, 2.5, -13), new Vec3(-20, 0, -12), new Vec3(-20, 0, -10)];
+    private customerPos: Vec3[] = [new Vec3(10.5, 0, -3.8), new Vec3(10.5, 0, 2.3), new Vec3(-7, 2.5, -13), new Vec3(-20, 0, -12), new Vec3(-20, 0, -10), new Vec3(-20, 0, -8)];
 
     //[init(-26,0,-8),1st person(10.5,0,-3.6), 2nd person{ 1stpos(1,0,-8),  2ndpos(10.5,0,2.5)},3rd person(-7.3,2.7,-13)]
 
@@ -17,6 +18,9 @@ export class GameManager extends Component {
 
     @property(Node)
     NoBal: Node = null;
+
+    @property(Node)
+    canvas: Node = null;
 
     @property(Node)
     Desk: Node = null;
@@ -44,17 +48,17 @@ export class GameManager extends Component {
 
         this.Upgrades.forEach(Unode => {
             tween(Unode)
-            .then(
-                tween()
-                    .to(0.6, { scale: new Vec3(1.1, 1.1, 1) })
-                    .to(0.3, { scale: new Vec3(1, 1, 1) })
-            )
-            .repeatForever()
-            .start();
+                .then(
+                    tween()
+                        .to(0.6, { scale: new Vec3(1.1, 1.1, 1) })
+                        .to(0.3, { scale: new Vec3(1, 1, 1) })
+                )
+                .repeatForever()
+                .start();
         });
-        
 
-         this.audiosource = this.node.getComponent(AudioSource);
+
+        this.audiosource = this.node.getComponent(AudioSource);
         const collider = this.Desk.getComponent(Collider);
         if (collider) {
             collider.on('onTriggerEnter', this.counter, this);
@@ -111,7 +115,10 @@ export class GameManager extends Component {
 
             })
             .delay(3).call(() => {
-                if (Id < 2) {
+                if (Id <= 2) {
+                    if (Id == 2) {
+                        targetCustomer.eulerAngles = new Vec3(0, 90, 0);
+                    }
                     targetCustomer.setPosition(targetCustomer.x + 1, targetCustomer.y, targetCustomer.z - 1)
                     tween(targetCustomer).to(0.3, { eulerAngles: new Vec3(0, 90, 0) }).call(() => {
                         destination = this.customerPos[this.id];
@@ -157,7 +164,23 @@ export class GameManager extends Component {
             .to(1, { position: destination }, { easing: "linear" })
             .call(() => {
 
-                if (!this.waitingCust.length) return;
+                if (!this.waitingCust.length) {
+                    this.id = 3;
+                    this.customers[0].setPosition(-26.06, 0, -8.631);
+                    this.customers[1].setPosition(-26.06, 0, -8.631);
+                    this.customers[0].setRotationFromEuler(0, 90, 0)
+                    this.customers[1].setRotationFromEuler(0, 90, 0)
+                    // this.customers[2].setPosition(-22.06, 0, -8.631);
+
+                    let idx = 0;
+                    this.Desk.getComponent(Collider).enabled = true;
+                    this.schedule(() => {
+                        this.moveAnim(idx)
+                        idx += 1;
+                    }, 1, 1, 1)
+                    return;
+                }
+                anim.crossFade(this.customersAnim[1].name, 0.1);
                 tween(this.waitingCust[0])
                     .to(0.6, { position: this.customerPos[3] }, { easing: "linear" })
                     .call(() => {
@@ -174,7 +197,7 @@ export class GameManager extends Component {
     counter() {
 
         if (this.waitingCust.length > 0) {
-             this.audiosource.playOneShot(this.audio,0.6);
+            this.audiosource.playOneShot(this.audio, 0.6);
             this.Desk.getComponent(Collider).enabled = false;
             this.Balance += 50;
             this.schedule(() => {
@@ -189,14 +212,45 @@ export class GameManager extends Component {
 
             this.MoveoutAnim();
             this.Bal.string = "$" + this.Balance.toString();
-            // this.waitingCust.splice(0, 1);
+
         } else {
-            CharacterMovement.id += 1;
+            if (this.Upgrades[2].parent.active) {
+                CharacterMovement.id = 3;
+            } else {
+                CharacterMovement.id = 4;
+            }
+
         }
 
     }
 
+    OnStartButtonClick() {
+
+        if (sys.os === sys.OS.ANDROID) {
+            window.open("https://play.google.com/store/apps/details?id=co.gxgames.spa&hl=en", "Serinity Spa");
+        } else if (sys.os === sys.OS.IOS) {
+            window.open("https://apps.apple.com/us/app/serenitys-spa-beauty-salon/id6446709410", "Serinity Spa");
+        } else {
+            window.open("https://play.google.com/store/apps/details?id=co.gxgames.spa&hl=en", "Serinity Spa");
+        }
+        // this.super_html_playable.download();
+
+    }
+
+    dt = 0;
+    ldt = 0;
+
     update(deltaTime: number) {
+        this.dt += deltaTime;
+
+        if (this.dt > 37 || CollisionTrigger.Unlock >= 3) {
+            this.ldt += deltaTime;
+            if (this.ldt > 7) {
+                this.canvas.children[2].active = false;
+                this.canvas.children[1].active = true;
+            }
+
+        }
 
     }
 }

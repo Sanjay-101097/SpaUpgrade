@@ -15,7 +15,9 @@ export class CollisionTrigger extends Component {
     @property(AudioClip)
     audio: AudioClip = null;
 
-    audiosource : AudioSource;
+    audiosource: AudioSource;
+
+    public static  Unlock = 0;
 
     start() {
         this.audiosource = this.node.getComponent(AudioSource);
@@ -28,21 +30,40 @@ export class CollisionTrigger extends Component {
     onTriggerEnter(event: ITriggerEvent) {
         // console.log('Triggered by:', event.otherCollider.node.name);
         // if(event.otherCollider.name != "Serenity_") return;
-        if (this.node.parent.active && this.gameManager.Balance > 0) {
-           
+        if (this.node.parent.active) {
+
             CharacterMovement.id += 1;
             if (this.node.parent.parent.name == "MassageUpgrade1" || this.node.parent.parent.name == "Sofa") {
-                this.gameManager.Balance -= 100;
+                if (this.gameManager.Balance >= 100) {
+                     this.gameManager.Balance -= 100;
+                    CollisionTrigger.Unlock+=1;
+
+
+                } else {
+                    CharacterMovement.id = 2;
+                     tween(this.gameManager.NoBal).to(0.3, { scale: new Vec3(1, 1, 1) }).delay(0.8).call(() => {
+                        this.gameManager.NoBal.setScale(0, 0, 0);
+                    }).start();
+                    return;
+                }
+
+
             } else {
-                this.gameManager.Balance -= 50;
+                if (this.gameManager.Balance >= 50) {
+                    this.gameManager.Balance -= 50;  
+                    CollisionTrigger.Unlock+=1;       
+                } else {
+                    CharacterMovement.id = 2;
+                     tween(this.gameManager.NoBal).to(0.3, { scale: new Vec3(1, 1, 1) }).delay(0.8).call(() => {
+                        this.gameManager.NoBal.setScale(0, 0, 0);
+                    }).start();
+                     return;
+                }
+
             }
 
             this.enable = true;
             this.getComponent(Collider).off('onTriggerEnter', this.onTriggerEnter, this);
-        } else {
-            tween(this.gameManager.NoBal).to(0.3, { scale: new Vec3(1, 1, 1) }).delay(0.8).call(() => {
-                this.gameManager.NoBal.setScale(0, 0, 0);
-            }).start();
         }
         this.gameManager.Bal.string = "$" + this.gameManager.Balance.toString();
 
@@ -57,14 +78,15 @@ export class CollisionTrigger extends Component {
             this.dt += deltaTime;
             if (this.dt > 0.7) {
                 this.enable = false
-                 this.audiosource.playOneShot(this.audio,0.6);
+                this.audiosource.playOneShot(this.audio, 0.6);
                 if (this.node.parent.parent.name == "MassageUpgrade1") {
                     let UpgNode = this.node.parent.parent.parent.getChildByName("MassageUpgrade2");
                     this.Particle.active = true;
+                     this.node.parent.parent.active = false;
                     tween(UpgNode)
                         .to(0.5, { scale: new Vec3(100, 100, 100) }, { easing: "quadOut" })
                         .call(() => {
-                            this.node.parent.parent.active = false;
+                           UpgNode.setRotationFromEuler(-90, 1, 0);
                             this.node.parent.active = false;
 
                         }).start();
@@ -73,10 +95,11 @@ export class CollisionTrigger extends Component {
                 } else if (this.node.parent.parent.name == "Sofa") {
                     let UpgNode = this.node.parent.parent.parent.getChildByName("SofaUpgrade2")
                     this.Particle.active = true;
+                    this.node.parent.parent.active = false;
                     tween(UpgNode)
                         .to(0.5, { scale: new Vec3(24, 18, 24) }, { easing: "quadOut" })
                         .call(() => {
-                            this.node.parent.parent.active = false;
+                            UpgNode.setRotationFromEuler(-90, 1, 0);
                             this.node.parent.active = false;
                         }).start();
 
@@ -91,7 +114,7 @@ export class CollisionTrigger extends Component {
                     this.node.getComponent(MeshRenderer).enabled = false;
                     tween(node).to(0.5, { scale: scaleval }, { easing: "quadOut" }).call(() => {
                         // if (this.node.parent.name != "station_pedia") {
-                            // node.getComponent(MeshCollider).enabled = true;
+                        // node.getComponent(MeshCollider).enabled = true;
                         // }
                         // let idx;
                         // if (this.node.name == "Upgrade1") {
