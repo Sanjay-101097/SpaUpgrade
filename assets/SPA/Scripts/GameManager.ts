@@ -28,6 +28,9 @@ export class GameManager extends Component {
     @property(AudioClip)
     audio: AudioClip = null;
 
+    @property(AudioSource)
+    walkingAudio: AudioSource = null;
+
     audiosource: AudioSource;
 
     @property(Prefab)
@@ -61,7 +64,7 @@ export class GameManager extends Component {
         this.audiosource = this.node.getComponent(AudioSource);
         const collider = this.Desk.getComponent(Collider);
         if (collider) {
-            collider.on('onTriggerEnter', this.counter, this);
+            collider.on('onTriggerStay', this.counter, this);
         }
 
         let idx = 0;
@@ -226,6 +229,8 @@ export class GameManager extends Component {
 
     OnStartButtonClick() {
 
+
+
         if (sys.os === sys.OS.ANDROID) {
             window.open("https://play.google.com/store/apps/details?id=co.gxgames.spa&hl=en", "Serinity Spa");
         } else if (sys.os === sys.OS.IOS) {
@@ -246,6 +251,7 @@ export class GameManager extends Component {
         if (this.dt > 37 || CollisionTrigger.Unlock >= 3) {
             this.ldt += deltaTime;
             if (this.ldt > 7) {
+                this.walkingAudio.destroy();
                 this.canvas.children[2].active = false;
                 this.canvas.children[1].active = true;
             }
