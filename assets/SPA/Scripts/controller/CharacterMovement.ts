@@ -167,7 +167,7 @@ export class CharacterMovement extends Component {
             cameraRotationY = this.mainCamera.node.eulerAngles.y;
         }
 
-        this._velocityScale = offset;
+        // this._velocityScale = offset;
 
         // This is the player's movement direction
         this._tmp.set(0, cameraRotationY + degree - 90 + 180, 0);
