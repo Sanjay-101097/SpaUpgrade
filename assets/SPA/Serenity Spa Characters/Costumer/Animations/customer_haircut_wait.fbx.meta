@@ -2,17 +2,17 @@
   "ver": "2.3.13",
   "importer": "fbx",
   "imported": true,
-  "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769",
+  "uuid": "2047a533-fe64-4d66-8a99-e6f89c2e08de",
   "files": [
     "__original-animation-0.cconb"
   ],
   "subMetas": {
-    "73b7f": {
+    "18d6f": {
       "importer": "gltf-animation",
-      "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769@73b7f",
+      "uuid": "2047a533-fe64-4d66-8a99-e6f89c2e08de@18d6f",
       "displayName": "",
-      "id": "73b7f",
-      "name": "Take 001.animation",
+      "id": "18d6f",
+      "name": "mixamo.com.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
@@ -32,7 +32,7 @@
     },
     "38c20": {
       "importer": "gltf-scene",
-      "uuid": "a03b7c9e-f46e-4cb6-847d-b19119b99769@38c20",
+      "uuid": "2047a533-fe64-4d66-8a99-e6f89c2e08de@38c20",
       "displayName": "",
       "id": "38c20",
       "name": "customer_haircut_wait.prefab",
@@ -54,16 +54,16 @@
     },
     "animationImportSettings": [
       {
-        "name": "Take 001",
+        "name": "mixamo.com",
         "duration": 0.06666667014360428,
         "fps": 30,
         "splits": [
           {
-            "name": "Take 001",
+            "name": "mixamo.com",
             "from": 0,
             "to": 0.06666667014360428,
             "wrapMode": 2,
-            "previousId": "73b7f"
+            "previousId": "18d6f"
           }
         ]
       }
@@ -92,7 +92,7 @@
       "textures": [],
       "materials": [],
       "scenes": [
-        "a03b7c9e-f46e-4cb6-847d-b19119b99769@38c20"
+        "2047a533-fe64-4d66-8a99-e6f89c2e08de@38c20"
       ]
     }
   }

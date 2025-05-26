@@ -226,6 +226,9 @@
           {}
         ]
       }
+    },
+    "meshOptimize": {
+      "enable": true
     }
   }
 }

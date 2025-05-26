@@ -7,19 +7,19 @@
     "__original-animation-0.cconb"
   ],
   "subMetas": {
-    "73b7f": {
+    "18d6f": {
       "importer": "gltf-animation",
-      "uuid": "81b142b0-129d-4f19-848c-d93932a3a050@73b7f",
+      "uuid": "81b142b0-129d-4f19-848c-d93932a3a050@18d6f",
       "displayName": "",
-      "id": "73b7f",
-      "name": "idle.animation",
+      "id": "18d6f",
+      "name": "mixamo.com.animation",
       "userData": {
         "gltfIndex": 0,
         "wrapMode": 2,
         "sample": 30,
         "span": {
           "from": 0,
-          "to": 0.06666667014360428
+          "to": 0.10000000149011612
         },
         "events": []
       },
@@ -54,16 +54,16 @@
     },
     "animationImportSettings": [
       {
-        "name": "Take 001",
-        "duration": 0.06666667014360428,
+        "name": "mixamo.com",
+        "duration": 0.10000000149011612,
         "fps": 30,
         "splits": [
           {
-            "name": "idle",
+            "name": "mixamo.com",
             "from": 0,
-            "to": 0.06666667014360428,
+            "to": 0.10000000149011612,
             "wrapMode": 2,
-            "previousId": "73b7f"
+            "previousId": "18d6f"
           }
         ]
       }

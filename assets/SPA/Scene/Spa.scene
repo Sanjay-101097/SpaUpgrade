@@ -4990,7 +4990,7 @@
     },
     "customersAnim": [
       {
-        "__uuid__": "81b142b0-129d-4f19-848c-d93932a3a050@73b7f",
+        "__uuid__": "81b142b0-129d-4f19-848c-d93932a3a050@18d6f",
         "__expectedType__": "cc.AnimationClip"
       },
       {
@@ -4998,7 +4998,7 @@
         "__expectedType__": "cc.AnimationClip"
       },
       {
-        "__uuid__": "a03b7c9e-f46e-4cb6-847d-b19119b99769@73b7f",
+        "__uuid__": "81b142b0-129d-4f19-848c-d93932a3a050@18d6f",
         "__expectedType__": "cc.AnimationClip"
       }
     ],
@@ -10630,7 +10630,7 @@
     "__prefab": null,
     "_materials": [
       {
-        "__uuid__": "ec2a2967-29a6-4088-ab39-79cc97f2b05c",
+        "__uuid__": "9ca41074-c5df-486b-8b3f-cdcfc0ea4f74@67ab7",
         "__expectedType__": "cc.Material"
       }
     ],
@@ -25847,8 +25847,8 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 185,
-      "height": 189
+      "width": 93,
+      "height": 95
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
