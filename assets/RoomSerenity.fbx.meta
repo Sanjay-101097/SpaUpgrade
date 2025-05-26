@@ -5,24 +5,6 @@
   "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415",
   "files": [],
   "subMetas": {
-    "78359": {
-      "importer": "gltf-mesh",
-      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@78359",
-      "displayName": "",
-      "id": "78359",
-      "name": "Juice.mesh",
-      "userData": {
-        "gltfIndex": 2,
-        "triangleCount": 1059
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
     "f087f": {
       "importer": "gltf-mesh",
       "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@f087f",
@@ -31,7 +13,7 @@
       "name": "Chair.mesh",
       "userData": {
         "gltfIndex": 0,
-        "triangleCount": 4574
+        "triangleCount": 2476
       },
       "ver": "1.1.1",
       "imported": true,
@@ -66,8 +48,8 @@
       "id": "f9fd7",
       "name": "MassageChair.mesh",
       "userData": {
-        "gltfIndex": 3,
-        "triangleCount": 2800
+        "gltfIndex": 2,
+        "triangleCount": 1997
       },
       "ver": "1.1.1",
       "imported": true,
@@ -84,7 +66,7 @@
       "id": "f2376",
       "name": "MassageUpgrade1.mesh",
       "userData": {
-        "gltfIndex": 4,
+        "gltfIndex": 3,
         "triangleCount": 11278
       },
       "ver": "1.1.1",
@@ -102,8 +84,8 @@
       "id": "a0cca",
       "name": "MassageUpgrade2.mesh",
       "userData": {
-        "gltfIndex": 5,
-        "triangleCount": 4152
+        "gltfIndex": 4,
+        "triangleCount": 2236
       },
       "ver": "1.1.1",
       "imported": true,
@@ -120,26 +102,8 @@
       "id": "2b270",
       "name": "floorMAt.mesh",
       "userData": {
-        "gltfIndex": 6,
-        "triangleCount": 84
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "b9cec": {
-      "importer": "gltf-mesh",
-      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@b9cec",
-      "displayName": "",
-      "id": "b9cec",
-      "name": "Plants.mesh",
-      "userData": {
-        "gltfIndex": 7,
-        "triangleCount": 9706
+        "gltfIndex": 5,
+        "triangleCount": 62
       },
       "ver": "1.1.1",
       "imported": true,
@@ -156,7 +120,7 @@
       "id": "01a55",
       "name": "polySurface1.mesh",
       "userData": {
-        "gltfIndex": 8,
+        "gltfIndex": 6,
         "triangleCount": 16
       },
       "ver": "1.1.1",
@@ -174,26 +138,8 @@
       "id": "db573",
       "name": "polySurface2.mesh",
       "userData": {
-        "gltfIndex": 9,
-        "triangleCount": 556
-      },
-      "ver": "1.1.1",
-      "imported": true,
-      "files": [
-        ".bin",
-        ".json"
-      ],
-      "subMetas": {}
-    },
-    "749eb": {
-      "importer": "gltf-mesh",
-      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@749eb",
-      "displayName": "",
-      "id": "749eb",
-      "name": "Sofa.001.mesh",
-      "userData": {
-        "gltfIndex": 10,
-        "triangleCount": 4170
+        "gltfIndex": 7,
+        "triangleCount": 388
       },
       "ver": "1.1.1",
       "imported": true,
@@ -210,8 +156,8 @@
       "id": "da6ee",
       "name": "SofaUpgrade2.mesh",
       "userData": {
-        "gltfIndex": 11,
-        "triangleCount": 6220
+        "gltfIndex": 8,
+        "triangleCount": 3552
       },
       "ver": "1.1.1",
       "imported": true,
@@ -221,15 +167,15 @@
       ],
       "subMetas": {}
     },
-    "d015e": {
+    "749eb": {
       "importer": "gltf-mesh",
-      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@d015e",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@749eb",
       "displayName": "",
-      "id": "d015e",
-      "name": "Table.mesh",
+      "id": "749eb",
+      "name": "Sofa.001.mesh",
       "userData": {
-        "gltfIndex": 12,
-        "triangleCount": 4358
+        "gltfIndex": 9,
+        "triangleCount": 1816
       },
       "ver": "1.1.1",
       "imported": true,
@@ -454,17 +400,14 @@
       "meshes": [
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@f087f",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@45cf3",
-        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@78359",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@f9fd7",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@f2376",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@a0cca",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@2b270",
-        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@b9cec",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@01a55",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@db573",
-        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@749eb",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@da6ee",
-        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@d015e"
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@749eb"
       ],
       "skeletons": [],
       "textures": [

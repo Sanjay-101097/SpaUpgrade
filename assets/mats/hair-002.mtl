@@ -77,13 +77,12 @@
     {
       "mainColor": {
         "__type__": "cc.Color",
-        "r": 71,
-        "g": 151,
-        "b": 96,
+        "r": 156,
+        "g": 0,
+        "b": 177,
         "a": 255
       },
-      "occlusion": 0.206,
-      "roughness": 0.869
+      "roughness": 0.795
     },
     {},
     {},
