@@ -2,7 +2,7 @@ import { _decorator, AnimationClip, AudioClip, AudioSource, Collider, Component,
 import { CharacterMovement } from './controller/CharacterMovement';
 import { CollisionTrigger } from './CollisionTrigger';
 const { ccclass, property } = _decorator;
-
+import {super_html_playable} from './super_html_playable';
 @ccclass('GameManager')
 export class GameManager extends Component {
 
@@ -43,6 +43,10 @@ export class GameManager extends Component {
 
     private id = 3;
     public Balance = 100;
+    super_html_playable: super_html_playable = new super_html_playable();
+
+
+ 
 
     protected start(): void {
 
@@ -233,7 +237,7 @@ export class GameManager extends Component {
         } else {
             window.open("https://play.google.com/store/apps/details?id=co.gxgames.spa&hl=en", "Serinity Spa");
         }
-        // this.super_html_playable.download();
+       this.super_html_playable.download();
 
     }
 
