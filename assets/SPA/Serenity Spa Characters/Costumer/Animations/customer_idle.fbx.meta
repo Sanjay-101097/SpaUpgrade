@@ -19,7 +19,7 @@
         "sample": 30,
         "span": {
           "from": 0,
-          "to": 5.923530062331105
+          "to": 0.06666667014360428
         },
         "events": []
       },
@@ -55,13 +55,13 @@
     "animationImportSettings": [
       {
         "name": "Take 001",
-        "duration": 6.599999904632568,
+        "duration": 0.06666667014360428,
         "fps": 30,
         "splits": [
           {
             "name": "idle",
             "from": 0,
-            "to": 5.923530062331105,
+            "to": 0.06666667014360428,
             "wrapMode": 2,
             "previousId": "73b7f"
           }
