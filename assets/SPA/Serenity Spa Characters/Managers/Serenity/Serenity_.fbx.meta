@@ -343,6 +343,7 @@
               "__uuid__": "4ab84d3f-761d-4b9e-babb-40441789adf0@6c48a",
               "__expectedType__": "cc.Texture2D"
             },
+            "albedoScale": 3,
             "shininessExponent": 20
           },
           {},
@@ -364,8 +365,7 @@
         "_defines": [
           {
             "DCC_APP_NAME": 2,
-            "USE_ALBEDO_MAP": true,
-            "HAS_EXPORTED_METALLIC": true
+            "USE_ALBEDO_MAP": true
           },
           {},
           {},
@@ -415,7 +415,8 @@
               "__uuid__": "919f9caf-ee54-47b4-80d9-062d538b3c0b@6c48a",
               "__expectedType__": "cc.Texture2D"
             },
-            "shininessExponent": 20
+            "emissiveScale": 0,
+            "shininessExponent": 0
           },
           {},
           {},
@@ -487,7 +488,15 @@
               "__uuid__": "b1d649fb-756e-4698-8527-f967739591c0@6c48a",
               "__expectedType__": "cc.Texture2D"
             },
-            "shininessExponent": 20
+            "albedoScale": 1.4,
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 121,
+              "g": 97,
+              "b": 66,
+              "a": 255
+            },
+            "shininessExponent": 0
           },
           {},
           {},
@@ -560,12 +569,19 @@
             },
             "mainColor": {
               "__type__": "cc.Color",
-              "r": 216,
-              "g": 36,
-              "b": 86,
+              "r": 195,
+              "g": 42,
+              "b": 84,
               "a": 255
             },
-            "shininessExponent": 20
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 189,
+              "g": 57,
+              "b": 57,
+              "a": 255
+            },
+            "shininessExponent": 5
           },
           {},
           {},

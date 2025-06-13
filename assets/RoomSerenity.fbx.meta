@@ -5,6 +5,38 @@
   "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415",
   "files": [],
   "subMetas": {
+    "35771": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@35771",
+      "displayName": "",
+      "id": "35771",
+      "name": "sofa_2.material",
+      "userData": {
+        "gltfIndex": 7
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "39232": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@39232",
+      "displayName": "",
+      "id": "39232",
+      "name": "phong13.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "f087f": {
       "importer": "gltf-mesh",
       "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@f087f",
@@ -139,7 +171,7 @@
       "name": "polySurface2.mesh",
       "userData": {
         "gltfIndex": 7,
-        "triangleCount": 388
+        "triangleCount": 404
       },
       "ver": "1.1.1",
       "imported": true,
@@ -251,6 +283,38 @@
       ],
       "subMetas": {}
     },
+    "a4cda": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@a4cda",
+      "displayName": "",
+      "id": "a4cda",
+      "name": "phong12.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7a3ca": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@7a3ca",
+      "displayName": "",
+      "id": "7a3ca",
+      "name": "lambert2.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
     "ddd4d": {
       "importer": "gltf-material",
       "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@ddd4d",
@@ -258,7 +322,7 @@
       "id": "ddd4d",
       "name": "sERENITY.material",
       "userData": {
-        "gltfIndex": 0
+        "gltfIndex": 3
       },
       "ver": "1.0.14",
       "imported": true,
@@ -274,7 +338,71 @@
       "id": "79c23",
       "name": "FloorMat.material",
       "userData": {
-        "gltfIndex": 1
+        "gltfIndex": 4
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d9054": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@d9054",
+      "displayName": "",
+      "id": "d9054",
+      "name": "rotating_chair1.material",
+      "userData": {
+        "gltfIndex": 5
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "05253": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@05253",
+      "displayName": "",
+      "id": "05253",
+      "name": "rotating_chair.material",
+      "userData": {
+        "gltfIndex": 6
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2bc56": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@2bc56",
+      "displayName": "",
+      "id": "2bc56",
+      "name": "table.material",
+      "userData": {
+        "gltfIndex": 8
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "14e5e": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@14e5e",
+      "displayName": "",
+      "id": "14e5e",
+      "name": "mat.material",
+      "userData": {
+        "gltfIndex": 9
       },
       "ver": "1.0.14",
       "imported": true,
@@ -290,7 +418,23 @@
       "id": "35b08",
       "name": "Scene_-_Root.material",
       "userData": {
-        "gltfIndex": 2
+        "gltfIndex": 10
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "db0cf": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@db0cf",
+      "displayName": "",
+      "id": "db0cf",
+      "name": "phong11.material",
+      "userData": {
+        "gltfIndex": 11
       },
       "ver": "1.0.14",
       "imported": true,
@@ -306,7 +450,55 @@
       "id": "00624",
       "name": "Transparent.material",
       "userData": {
-        "gltfIndex": 3
+        "gltfIndex": 12
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a130f": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@a130f",
+      "displayName": "",
+      "id": "a130f",
+      "name": "phong3.material",
+      "userData": {
+        "gltfIndex": 13
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b8673": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@b8673",
+      "displayName": "",
+      "id": "b8673",
+      "name": "phong2.material",
+      "userData": {
+        "gltfIndex": 14
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e6211": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@e6211",
+      "displayName": "",
+      "id": "e6211",
+      "name": "phong4.material",
+      "userData": {
+        "gltfIndex": 15
       },
       "ver": "1.0.14",
       "imported": true,
@@ -322,7 +514,7 @@
       "id": "70eac",
       "name": "Sofa3.material",
       "userData": {
-        "gltfIndex": 4
+        "gltfIndex": 16
       },
       "ver": "1.0.14",
       "imported": true,
@@ -338,7 +530,23 @@
       "id": "0d6be",
       "name": "Cushions3.material",
       "userData": {
-        "gltfIndex": 5
+        "gltfIndex": 17
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aac8e": {
+      "importer": "gltf-material",
+      "uuid": "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@aac8e",
+      "displayName": "",
+      "id": "aac8e",
+      "name": "Sofa.material",
+      "userData": {
+        "gltfIndex": 18
       },
       "ver": "1.0.14",
       "imported": true,
@@ -415,12 +623,25 @@
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@05da8"
       ],
       "materials": [
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@39232",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@a4cda",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@7a3ca",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@ddd4d",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@79c23",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@d9054",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@05253",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@35771",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@2bc56",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@14e5e",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@35b08",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@db0cf",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@00624",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@a130f",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@b8673",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@e6211",
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@70eac",
-        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@0d6be"
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@0d6be",
+        "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@aac8e"
       ],
       "scenes": [
         "2fbdde1e-727c-40a2-ae39-b8bf0b0a9415@c465b"
@@ -440,7 +661,9 @@
         "_techIdx": 0,
         "_defines": [
           {
-            "USE_ALBEDO_MAP": true
+            "USE_ALBEDO_MAP": true,
+            "DEFAULT_UV": "v_uv1",
+            "ALPHA_TEST_CHANNEL": "r"
           },
           {},
           {},
@@ -506,6 +729,12 @@
         ],
         "_props": [
           {
+            "alphaThreshold": 0.125,
+            "roughness": 0.75,
+            "metallic": 0.153,
+            "specularIntensity": 0.336,
+            "anisotropyIntensity": 0.604,
+            "anisotropyRotation": 0.2534,
             "mainTexture": {
               "__uuid__": "113d811f-e1ed-4e51-be7a-8476873d4d38@6c48a",
               "__expectedType__": "cc.Texture2D"
@@ -581,21 +810,22 @@
             "mainColor": {
               "__type__": "cc.Color",
               "r": 255,
-              "g": 208,
-              "b": 59,
+              "g": 178,
+              "b": 41,
               "a": 255
             },
+            "albedoScale": 1.4,
             "emissive": {
               "__type__": "cc.Color",
               "r": 255,
-              "g": 255,
-              "b": 255,
+              "g": 190,
+              "b": 94,
               "a": 255
             },
             "emissiveScale": 0,
-            "shininessExponent": 0,
-            "specularFactor": 0.25,
-            "transparencyFactor": 0,
+            "shininessExponent": 3.3,
+            "specularFactor": 3.05,
+            "transparencyFactor": 0.181,
             "metallic": 0.04
           },
           {},
@@ -684,11 +914,13 @@
           {
             "mainColor": {
               "__type__": "cc.Color",
-              "r": 231,
-              "g": 231,
-              "b": 231,
+              "r": 255,
+              "g": 205,
+              "b": 141,
               "a": 255
             },
+            "roughness": 0.512,
+            "specularIntensity": 0.583,
             "mainTexture": {
               "__uuid__": "652e6c4d-4892-47d6-902b-164b7c87b6ca@6c48a",
               "__expectedType__": "cc.Texture2D"

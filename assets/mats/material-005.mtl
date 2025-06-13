@@ -10,7 +10,9 @@
   },
   "_techIdx": 0,
   "_defines": [
-    {},
+    {
+      "EMISSIVE_UV": "v_uv1"
+    },
     {},
     {},
     {},
@@ -77,13 +79,23 @@
     {
       "mainColor": {
         "__type__": "cc.Color",
-        "r": 59,
-        "g": 59,
-        "b": 59,
+        "r": 177,
+        "g": 92,
+        "b": 255,
         "a": 255
       },
-      "roughness": 0.977,
-      "specularIntensity": 0.334
+      "alphaThreshold": 0.324,
+      "occlusion": 0.141,
+      "roughness": 0.878,
+      "specularIntensity": 0.461,
+      "emissive": {
+        "__type__": "cc.Color",
+        "r": 54,
+        "g": 4,
+        "b": 100,
+        "a": 255
+      },
+      "anisotropyIntensity": 0.2306
     },
     {},
     {},
