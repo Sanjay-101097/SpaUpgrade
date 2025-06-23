@@ -79,15 +79,22 @@
     {
       "mainColor": {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 222,
-        "b": 175,
+        "r": 253,
+        "g": 207,
+        "b": 255,
         "a": 255
       },
-      "roughness": 0.625,
-      "specularIntensity": 1,
+      "roughness": 0.558,
+      "specularIntensity": 0.806,
+      "emissive": {
+        "__type__": "cc.Color",
+        "r": 102,
+        "g": 102,
+        "b": 102,
+        "a": 255
+      },
       "mainTexture": {
-        "__uuid__": "4765b06e-469c-47a5-9aa6-865778198557@6c48a",
+        "__uuid__": "652e6c4d-4892-47d6-902b-164b7c87b6ca@6c48a",
         "__expectedType__": "cc.Texture2D"
       }
     },

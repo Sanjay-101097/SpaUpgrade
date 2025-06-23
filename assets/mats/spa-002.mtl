@@ -70,6 +70,13 @@
   ],
   "_props": [
     {
+      "mainColor": {
+        "__type__": "cc.Color",
+        "r": 255,
+        "g": 195,
+        "b": 131,
+        "a": 255
+      },
       "roughness": 0.544,
       "specularIntensity": 0.408,
       "mainTexture": {
