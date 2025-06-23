@@ -48,7 +48,7 @@
             "_value": false
           },
           "affine-transform": {
-            "_value": false
+            "_value": true
           },
           "ui": {
             "_value": true
@@ -140,7 +140,7 @@
             "_value": false
           },
           "light-probe": {
-            "_value": false
+            "_value": true
           },
           "tiled-map": {
             "_value": false
@@ -168,7 +168,7 @@
             "_value": false
           },
           "marionette": {
-            "_value": false
+            "_value": true
           },
           "procedural-animation": {
             "_value": false
@@ -193,12 +193,15 @@
         "includeModules": [
           "2d",
           "3d",
+          "affine-transform",
           "animation",
           "audio",
           "base",
           "custom-pipeline",
           "gfx-webgl",
           "graphics",
+          "light-probe",
+          "marionette",
           "particle",
           "physics-ammo",
           "primitive",
@@ -212,9 +215,6 @@
           "version": ""
         }
       }
-    },
-    "graphics": {
-      "pipeline": "custom-pipeline"
     }
   }
 }
