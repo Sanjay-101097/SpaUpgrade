@@ -87,9 +87,9 @@
       "specularIntensity": 0.376,
       "emissive": {
         "__type__": "cc.Color",
-        "r": 165,
-        "g": 116,
-        "b": 36,
+        "r": 188,
+        "g": 205,
+        "b": 230,
         "a": 255
       }
     },
