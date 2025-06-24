@@ -190,17 +190,17 @@
             "mainColor": {
               "__type__": "cc.Color",
               "r": 255,
-              "g": 78,
-              "b": 156,
+              "g": 117,
+              "b": 178,
               "a": 255
             },
-            "roughness": 0.656,
-            "specularIntensity": 0.467,
+            "roughness": 0.813,
+            "specularIntensity": 0.439,
             "emissive": {
               "__type__": "cc.Color",
               "r": 255,
-              "g": 65,
-              "b": 65,
+              "g": 41,
+              "b": 126,
               "a": 255
             }
           },
@@ -290,13 +290,20 @@
           {
             "mainColor": {
               "__type__": "cc.Color",
-              "r": 207,
-              "g": 114,
-              "b": 14,
+              "r": 233,
+              "g": 149,
+              "b": 59,
               "a": 255
             },
-            "roughness": 0.684,
-            "specularIntensity": 0.894
+            "roughness": 0.796,
+            "specularIntensity": 0.649,
+            "emissive": {
+              "__type__": "cc.Color",
+              "r": 117,
+              "g": 75,
+              "b": 0,
+              "a": 255
+            }
           },
           {},
           {},
