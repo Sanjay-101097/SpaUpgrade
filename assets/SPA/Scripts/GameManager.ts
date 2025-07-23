@@ -45,7 +45,9 @@ export class GameManager extends Component {
     public Balance = 100;
     super_html_playable: super_html_playable = new super_html_playable();
 
-
+    public Downnload(): void {
+        this.super.download();
+    }
  
 
     protected start(): void {
